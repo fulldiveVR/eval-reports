@@ -1,0 +1,218 @@
+{
+  "runId": "local-1770760551401",
+  "timestamp": "2026-02-10T21:55:51.401Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "1f63db0",
+  "branch": "alex/qa-system",
+  "model": "unknown",
+  "duration": 1105547,
+  "summary": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "passRate": 100
+  },
+  "categories": {
+    "agent": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "llm": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "sandbox": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "benchmark": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "persistence": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "vfs": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "scenarios": [
+    {
+      "id": "agent-02-transformer",
+      "category": "agent",
+      "passed": true,
+      "duration": 34007,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "basic-e2b-opencode",
+      "category": "sandbox",
+      "passed": true,
+      "duration": 9344,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "benchmark-openrouter-x-ai-grok-4-fast-1769436496866",
+      "category": "benchmark",
+      "passed": true,
+      "duration": null,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "emoji-prompt",
+      "category": "sandbox",
+      "passed": true,
+      "duration": 16126,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "file-operations",
+      "category": "sandbox",
+      "passed": true,
+      "duration": 17676,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "llm-01-market-research",
+      "category": "llm",
+      "passed": true,
+      "duration": 29331,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "llm-02-marketing-strategy",
+      "category": "llm",
+      "passed": true,
+      "duration": 252756,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "llm-03-crm-integration",
+      "category": "llm",
+      "passed": true,
+      "duration": 183277,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "llm-04-ga4-reports",
+      "category": "llm",
+      "passed": true,
+      "duration": 78401,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "llm-05-repo-analysis",
+      "category": "llm",
+      "passed": true,
+      "duration": 43821,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "llm-06-repo-news-prompts",
+      "category": "llm",
+      "passed": true,
+      "duration": 222626,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "llm-07-api-data-fetch",
+      "category": "llm",
+      "passed": true,
+      "duration": 39868,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "log-streaming",
+      "category": "persistence",
+      "passed": true,
+      "duration": 14666,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "ssh-git-clone",
+      "category": "sandbox",
+      "passed": true,
+      "duration": 8069,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "task-lifecycle",
+      "category": "persistence",
+      "passed": true,
+      "duration": 18972,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "tool-capture",
+      "category": "persistence",
+      "passed": true,
+      "duration": 19282,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-agent-writes-to-workspace",
+      "category": "vfs",
+      "passed": true,
+      "duration": 24505,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-initial-file-load",
+      "category": "vfs",
+      "passed": true,
+      "duration": 20007,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-sync-visibility",
+      "category": "vfs",
+      "passed": true,
+      "duration": 13560,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-workfolder-isolation",
+      "category": "vfs",
+      "passed": true,
+      "duration": 55836,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "workspace-env-ssh",
+      "category": "sandbox",
+      "passed": true,
+      "duration": 3417,
+      "score": null,
+      "error": null
+    }
+  ]
+}
