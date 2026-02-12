@@ -3,328 +3,218 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eval Dashboard</title>
+<title>Eval Reports</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; background: #0d1117; color: #c9d1d9; padding: 24px; }
-  h1 { font-size: 24px; margin-bottom: 8px; color: #f0f6fc; }
-  .subtitle { color: #8b949e; margin-bottom: 24px; font-size: 14px; }
-  .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 24px; flex-wrap: wrap; }
-  select { background: #161b22; color: #c9d1d9; border: 1px solid #30363d; padding: 6px 12px; border-radius: 6px; font-size: 14px; }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
-  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
-  .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; }
-  .card h2 { font-size: 14px; color: #8b949e; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .full-width { grid-column: 1 / -1; }
-  .banner { padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; font-size: 14px; font-weight: 600; }
-  .banner.red { background: #3d1418; border: 1px solid #f8514966; color: #ff7b72; }
-  .banner.green { background: #12261e; border: 1px solid #3fb95066; color: #3fb950; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th { text-align: left; padding: 8px 12px; border-bottom: 1px solid #30363d; color: #8b949e; font-weight: 600; }
-  td { padding: 6px 12px; border-bottom: 1px solid #21262d; }
-  .pass { color: #3fb950; }
-  .fail { color: #f85149; }
-  .score { color: #d2a8ff; }
-  .stat-row { display: flex; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
-  .stat { text-align: center; }
-  .stat .value { font-size: 32px; font-weight: 700; color: #f0f6fc; }
-  .stat .label { font-size: 12px; color: #8b949e; margin-top: 4px; }
-  .loading { text-align: center; padding: 48px; color: #8b949e; }
-  canvas { max-height: 300px; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,monospace;background:#0d1117;color:#c9d1d9;padding:24px}
+h1{font-size:24px;margin-bottom:4px;color:#f0f6fc}
+.sub{color:#8b949e;margin-bottom:20px;font-size:13px}
+.controls{display:flex;gap:12px;align-items:center;margin-bottom:20px;flex-wrap:wrap}
+select{background:#161b22;color:#c9d1d9;border:1px solid #30363d;padding:6px 12px;border-radius:6px;font-size:14px;cursor:pointer}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px}
+.card h2{font-size:13px;color:#8b949e;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.full{grid-column:1/-1}
+.banner{padding:10px 14px;border-radius:8px;margin-bottom:14px;font-size:13px;font-weight:600}
+.banner.ok{background:#12261e;border:1px solid #3fb95066;color:#3fb950}
+.banner.warn{background:#3d1418;border:1px solid #f8514966;color:#ff7b72}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;padding:8px 10px;border-bottom:1px solid #30363d;color:#8b949e;font-weight:600}
+td{padding:6px 10px;border-bottom:1px solid #21262d}
+.pass{color:#3fb950}.fail{color:#f85149}.score{color:#d2a8ff}.muted{color:#8b949e}
+.stats{display:flex;gap:24px;margin-bottom:18px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat .v{font-size:28px;font-weight:700;color:#f0f6fc}
+.stat .l{font-size:11px;color:#8b949e;margin-top:2px}
+.empty{text-align:center;padding:40px;color:#8b949e}
+canvas{max-height:280px}
 </style>
 </head>
 <body>
-
-<h1>Eval Dashboard</h1>
-<p class="subtitle">Automated evaluation tracking and regression detection</p>
-
+<h1>Eval Reports</h1>
+<p class="sub">Automated evaluation tracking &middot; regression detection</p>
 <div class="controls">
-  <label>Project:</label>
-  <select id="projectSelect">
+<label>Project:</label>
+<select id="proj">
     <option value="agents-core">agents-core</option>
     <option value="dashboard-v2">dashboard-v2</option>
-  </select>
-  <label>Last:</label>
-  <select id="rangeSelect">
-    <option value="30">30 runs</option>
-    <option value="60">60 runs</option>
-    <option value="0">All</option>
-  </select>
+</select>
+<label>Show:</label>
+<select id="range">
+<option value="30">Last 30</option>
+<option value="60">Last 60</option>
+<option value="0">All</option>
+</select>
 </div>
-
 <div id="alerts"></div>
-
-<div class="stat-row" id="stats">
-  <div class="loading">Loading data...</div>
-</div>
-
+<div class="stats" id="stats"><div class="empty">Loading...</div></div>
 <div class="grid">
-  <div class="card">
-    <h2>Pass Rate Over Time</h2>
-    <canvas id="passRateChart"></canvas>
-  </div>
-  <div class="card">
-    <h2>LLM Scores Over Time</h2>
-    <canvas id="scoresChart"></canvas>
-  </div>
-  <div class="card">
-    <h2>Execution Time Trend</h2>
-    <canvas id="durationChart"></canvas>
-  </div>
-  <div class="card">
-    <h2>Category Breakdown (Latest)</h2>
-    <canvas id="categoryChart"></canvas>
-  </div>
-  <div class="card full-width">
-    <h2>Latest Run Details</h2>
-    <div id="latestTable"><div class="loading">Loading...</div></div>
-  </div>
+<div class="card"><h2>Pass Rate Over Time</h2><canvas id="cPassRate"></canvas></div>
+<div class="card"><h2>Scores Over Time</h2><canvas id="cScores"></canvas></div>
+<div class="card"><h2>Duration Trend</h2><canvas id="cDuration"></canvas></div>
+<div class="card"><h2>Categories (Latest)</h2><canvas id="cCats"></canvas></div>
+<div class="card full"><h2>Latest Run</h2><div id="tbl"><div class="empty">Loading...</div></div></div>
 </div>
-
 <script>
-const CHART_COLORS = [
-  '#58a6ff', '#3fb950', '#d2a8ff', '#f0883e', '#f85149',
-  '#a5d6ff', '#7ee787', '#d8b4fe', '#ffa657', '#ff7b72'
-];
+/* ── helpers ─────────────────────────────────────────────────────── */
+const C=['#58a6ff','#3fb950','#d2a8ff','#f0883e','#f85149','#a5d6ff','#7ee787','#d8b4fe','#ffa657','#ff7b72'];
+const base={responsive:true,maintainAspectRatio:true,
+  plugins:{legend:{labels:{color:'#8b949e',font:{size:11}}}},
+  scales:{x:{ticks:{color:'#484f58',font:{size:10}},grid:{color:'#21262d'}},
+          y:{ticks:{color:'#484f58',font:{size:10}},grid:{color:'#21262d'}}}};
+let ch={};
+function kill(){Object.values(ch).forEach(c=>c.destroy());ch={}}
+function fmtDate(t){const d=new Date(t);return `${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`}
+function fmtMs(ms){if(ms==null)return'-';if(ms<1e3)return ms+'ms';if(ms<6e4)return(ms/1e3).toFixed(1)+'s';return(ms/6e4).toFixed(1)+'m'}
+function sDur(s){return s.duration||s.durationMs||null}
 
-const chartDefaults = {
-  responsive: true,
-  maintainAspectRatio: true,
-  plugins: { legend: { labels: { color: '#8b949e', font: { size: 11 } } } },
-  scales: {
-    x: { ticks: { color: '#484f58', font: { size: 10 } }, grid: { color: '#21262d' } },
-    y: { ticks: { color: '#484f58', font: { size: 10 } }, grid: { color: '#21262d' } }
-  }
-};
-
-let charts = {};
-
-function destroyCharts() {
-  Object.values(charts).forEach(c => c.destroy());
-  charts = {};
-}
-
-function formatDate(ts) {
-  const d = new Date(ts);
-  return `${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')} ${d.getHours().toString().padStart(2,'0')}:${d.getMinutes().toString().padStart(2,'0')}`;
-}
-
-function formatDuration(ms) {
-  if (ms == null) return '-';
-  if (ms < 1000) return ms + 'ms';
-  if (ms < 60000) return (ms/1000).toFixed(1) + 's';
-  return (ms/60000).toFixed(1) + 'm';
-}
-
-function scenarioDuration(s) {
-  return s.duration || s.durationMs || null;
-}
-
-function detectRegressions(runs) {
-  if (runs.length < 6) return [];
-  const latest = runs[runs.length - 1];
-  const regressions = [];
-
-  for (const scenario of (latest.scenarios || [])) {
-    if (scenario.score == null) continue;
-    const prev = [];
-    for (let i = Math.max(0, runs.length - 6); i < runs.length - 1; i++) {
-      const s = (runs[i].scenarios || []).find(sc => sc.id === scenario.id);
-      if (s && s.score != null) prev.push(s.score);
+/* ── regression detection ────────────────────────────────────────── */
+function regressions(runs){
+  if(runs.length<4)return[];
+  const last=runs[runs.length-1],out=[];
+  // scenario score regressions
+  for(const sc of (last.scenarios||[])){
+    if(sc.score==null)continue;
+    const prev=[];
+    for(let i=Math.max(0,runs.length-6);i<runs.length-1;i++){
+      const s=(runs[i].scenarios||[]).find(x=>x.id===sc.id);
+      if(s&&s.score!=null)prev.push(s.score);
     }
-    if (prev.length < 3) continue;
-    const avg = prev.reduce((a,b) => a+b, 0) / prev.length;
-    const drop = avg - scenario.score;
-    if (drop > 10) {
-      regressions.push({ id: scenario.id, score: scenario.score, avg: avg.toFixed(1), drop: drop.toFixed(1) });
-    }
+    if(prev.length<3)continue;
+    const avg=prev.reduce((a,b)=>a+b,0)/prev.length;
+    if(avg-sc.score>10)out.push({id:sc.id,now:sc.score,avg:avg.toFixed(1),drop:(avg-sc.score).toFixed(1)});
   }
-
-  const prevRates = [];
-  for (let i = Math.max(0, runs.length - 6); i < runs.length - 1; i++) {
-    if (runs[i].summary) prevRates.push(runs[i].summary.passRate);
+  // pass-rate regression
+  const pr=[];
+  for(let i=Math.max(0,runs.length-6);i<runs.length-1;i++){
+    if(runs[i].summary)pr.push(runs[i].summary.passRate);
   }
-  if (prevRates.length >= 3) {
-    const avgRate = prevRates.reduce((a,b) => a+b, 0) / prevRates.length;
-    const rateDrop = avgRate - (latest.summary?.passRate || 0);
-    if (rateDrop > 15) {
-      regressions.push({ id: '_overall_pass_rate', score: latest.summary.passRate, avg: avgRate.toFixed(1), drop: rateDrop.toFixed(1) });
-    }
+  if(pr.length>=3){
+    const avg=pr.reduce((a,b)=>a+b,0)/pr.length;
+    const drop=avg-(last.summary?.passRate||0);
+    if(drop>15)out.push({id:'_pass_rate',now:last.summary.passRate,avg:avg.toFixed(1),drop:drop.toFixed(1)});
   }
-
-  return regressions;
+  return out;
 }
 
-function renderAlerts(regressions) {
-  const el = document.getElementById('alerts');
-  if (regressions.length === 0) {
-    el.innerHTML = '<div class="banner green">No regressions detected</div>';
-    return;
+/* ── render functions ────────────────────────────────────────────── */
+function rAlerts(r){
+  const el=$('alerts');
+  if(!r.length){el.innerHTML='<div class="banner ok">No regressions detected</div>';return}
+  el.innerHTML='<div class="banner warn">Regression detected:<br>'+r.map(x=>
+    x.id==='_pass_rate'?`Pass rate dropped ${x.drop}pts (${x.avg}% avg &rarr; ${x.now}%)`
+    :`${x.id}: score dropped ${x.drop}pts (${x.avg} &rarr; ${x.now})`
+  ).join('<br>')+'</div>';
+}
+
+function rStats(runs){
+  const el=$('stats');
+  if(!runs.length){el.innerHTML='<div class="empty">No data</div>';return}
+  const last=runs[runs.length-1],s=last.summary||{};
+  const rate=s.passRate!=null?s.passRate.toFixed(1)+'%':'-';
+  el.innerHTML=`
+    <div class="stat"><div class="v">${runs.length}</div><div class="l">Runs</div></div>
+    <div class="stat"><div class="v">${s.total||'-'}</div><div class="l">Scenarios</div></div>
+    <div class="stat"><div class="v ${(s.passRate||0)>=80?'pass':'fail'}">${rate}</div><div class="l">Pass Rate</div></div>
+    <div class="stat"><div class="v">${fmtMs(last.duration)}</div><div class="l">Duration</div></div>
+    <div class="stat"><div class="v">${last.model||last.gitSha||last.commit||'-'}</div><div class="l">${last.model?'Model':'Commit'}</div></div>`;
+}
+
+function rPassRate(runs){
+  const labels=runs.map(r=>fmtDate(r.timestamp));
+  const ds=[{label:'Overall',data:runs.map(r=>r.summary?.passRate??null),borderColor:C[0],tension:.3,fill:false,pointRadius:3}];
+  const cats=new Set();
+  runs.forEach(r=>{if(r.categories)Object.keys(r.categories).forEach(c=>cats.add(c))});
+  let i=1;
+  for(const cat of [...cats].sort()){
+    ds.push({label:cat,data:runs.map(r=>{const c=r.categories?.[cat];return c&&c.total>0?(c.passed/c.total*100):null}),
+      borderColor:C[i%C.length],borderDash:[5,3],tension:.3,fill:false,pointRadius:2});
+    i++;
   }
-  const items = regressions.map(r =>
-    r.id === '_overall_pass_rate'
-      ? `Overall pass rate dropped ${r.drop} points (${r.avg}% avg &rarr; ${r.score}%)`
-      : `${r.id}: score dropped ${r.drop} points (${r.avg} avg &rarr; ${r.score})`
-  ).join('<br>');
-  el.innerHTML = `<div class="banner red">Regression detected:<br>${items}</div>`;
+  ch.pr=new Chart($('cPassRate'),{type:'line',data:{labels,datasets:ds},
+    options:{...base,scales:{...base.scales,y:{...base.scales.y,min:0,max:100,title:{display:true,text:'%',color:'#484f58'}}}}});
 }
 
-function renderStats(runs) {
-  const el = document.getElementById('stats');
-  if (runs.length === 0) {
-    el.innerHTML = '<div class="loading">No data yet</div>';
-    return;
+function rScores(runs){
+  const labels=runs.map(r=>fmtDate(r.timestamp));
+  const sids=new Set();
+  runs.forEach(r=>(r.scenarios||[]).forEach(s=>{if(s.score!=null)sids.add(s.id)}));
+  const ds=[];let i=0;
+  for(const sid of [...sids].sort()){
+    ds.push({label:sid.replace(/^llm-\d+-/,''),
+      data:runs.map(r=>{const s=(r.scenarios||[]).find(x=>x.id===sid);return s?.score??null}),
+      borderColor:C[i%C.length],tension:.3,fill:false,spanGaps:true,pointRadius:2});
+    i++;
   }
-  const latest = runs[runs.length - 1];
-  const s = latest.summary || {};
-  el.innerHTML = `
-    <div class="stat"><div class="value">${runs.length}</div><div class="label">Total Runs</div></div>
-    <div class="stat"><div class="value">${s.total || '-'}</div><div class="label">Scenarios</div></div>
-    <div class="stat"><div class="value ${(s.passRate||0) >= 80 ? 'pass' : 'fail'}">${s.passRate != null ? s.passRate.toFixed(1)+'%' : '-'}</div><div class="label">Pass Rate (Latest)</div></div>
-    <div class="stat"><div class="value">${latest.duration ? formatDuration(latest.duration) : '-'}</div><div class="label">Duration (Latest)</div></div>
-    <div class="stat"><div class="value">${latest.model || '-'}</div><div class="label">Model</div></div>
-  `;
+  if(!ds.length){$('cScores').parentElement.querySelector('h2').textContent='Scores Over Time (none)';return}
+  ch.sc=new Chart($('cScores'),{type:'line',data:{labels,datasets:ds},
+    options:{...base,scales:{...base.scales,y:{...base.scales.y,min:0,max:100,title:{display:true,text:'Score',color:'#484f58'}}}}});
 }
 
-function renderPassRateChart(runs) {
-  const labels = runs.map(r => formatDate(r.timestamp));
-  const datasets = [{ label: 'Total', data: runs.map(r => r.summary?.passRate ?? null), borderColor: CHART_COLORS[0], tension: 0.3, fill: false }];
+function rDuration(runs){
+  const labels=runs.map(r=>fmtDate(r.timestamp));
+  ch.dur=new Chart($('cDuration'),{type:'line',
+    data:{labels,datasets:[{label:'Duration',data:runs.map(r=>r.duration?r.duration/1e3:null),
+      borderColor:'#f0883e',backgroundColor:'#f0883e22',tension:.3,fill:true,pointRadius:2}]},
+    options:{...base,scales:{...base.scales,y:{...base.scales.y,title:{display:true,text:'sec',color:'#484f58'}}}}});
+}
 
-  const allCats = new Set();
-  runs.forEach(r => { if (r.categories) Object.keys(r.categories).forEach(c => allCats.add(c)); });
-  let ci = 1;
-  for (const cat of [...allCats].sort()) {
-    datasets.push({
-      label: cat,
-      data: runs.map(r => {
-        const c = r.categories?.[cat];
-        return c ? (c.total > 0 ? (c.passed / c.total * 100) : null) : null;
-      }),
-      borderColor: CHART_COLORS[ci % CHART_COLORS.length],
-      borderDash: [5, 3],
-      tension: 0.3,
-      fill: false
-    });
-    ci++;
+function rCats(runs){
+  if(!runs.length)return;
+  const cats=runs[runs.length-1].categories||{};
+  const labels=Object.keys(cats).sort();
+  ch.cat=new Chart($('cCats'),{type:'bar',
+    data:{labels,datasets:[
+      {label:'Passed',data:labels.map(l=>cats[l].passed),backgroundColor:'#3fb950'},
+      {label:'Failed',data:labels.map(l=>cats[l].failed),backgroundColor:'#f85149'}]},
+    options:{...base,scales:{...base.scales,x:{...base.scales.x,stacked:true},y:{...base.scales.y,stacked:true,beginAtZero:true}}}});
+}
+
+function rTable(runs){
+  const el=$('tbl');
+  if(!runs.length){el.innerHTML='<p class="empty">No data</p>';return}
+  const last=runs[runs.length-1],sc=last.scenarios||[];
+  if(!sc.length){el.innerHTML='<p class="empty">No scenarios</p>';return}
+  let h='<table><thead><tr><th>Scenario</th><th>Category</th><th>Status</th><th>Duration</th><th>Score</th><th>Error</th></tr></thead><tbody>';
+  for(const s of sc.sort((a,b)=>a.id.localeCompare(b.id))){
+    const st=s.passed?'<span class="pass">PASS</span>':'<span class="fail">FAIL</span>';
+    const sc2=s.score!=null?`<span class="score">${s.score}</span>`:'-';
+    const err=s.error?`<span class="fail">${String(s.error).substring(0,80)}</span>`:'-';
+    h+=`<tr><td>${s.id}</td><td>${s.category||'-'}</td><td>${st}</td><td>${fmtMs(sDur(s))}</td><td>${sc2}</td><td>${err}</td></tr>`;
   }
-
-  charts.passRate = new Chart(document.getElementById('passRateChart'), {
-    type: 'line', data: { labels, datasets },
-    options: { ...chartDefaults, scales: { ...chartDefaults.scales, y: { ...chartDefaults.scales.y, min: 0, max: 100, title: { display: true, text: '%', color: '#484f58' } } } }
-  });
+  el.innerHTML=h+'</tbody></table>';
 }
 
-function renderScoresChart(runs) {
-  const labels = runs.map(r => formatDate(r.timestamp));
-  const scoredScenarios = new Set();
-  runs.forEach(r => (r.scenarios || []).forEach(s => { if (s.score != null) scoredScenarios.add(s.id); }));
+/* ── main ────────────────────────────────────────────────────────── */
+const $=id=>document.getElementById(id);
 
-  const datasets = [];
-  let ci = 0;
-  for (const sid of [...scoredScenarios].sort()) {
-    datasets.push({
-      label: sid.replace(/^llm-\d+-/, ''),
-      data: runs.map(r => {
-        const s = (r.scenarios || []).find(sc => sc.id === sid);
-        return s?.score ?? null;
-      }),
-      borderColor: CHART_COLORS[ci % CHART_COLORS.length],
-      tension: 0.3,
-      fill: false,
-      spanGaps: true
-    });
-    ci++;
-  }
-
-  if (datasets.length === 0) {
-    document.getElementById('scoresChart').parentElement.querySelector('h2').textContent = 'LLM SCORES OVER TIME (no scored scenarios)';
-    return;
-  }
-
-  charts.scores = new Chart(document.getElementById('scoresChart'), {
-    type: 'line', data: { labels, datasets },
-    options: { ...chartDefaults, scales: { ...chartDefaults.scales, y: { ...chartDefaults.scales.y, min: 0, max: 100, title: { display: true, text: 'Score', color: '#484f58' } } } }
-  });
-}
-
-function renderDurationChart(runs) {
-  const labels = runs.map(r => formatDate(r.timestamp));
-  charts.duration = new Chart(document.getElementById('durationChart'), {
-    type: 'line',
-    data: {
-      labels,
-      datasets: [{ label: 'Total Duration', data: runs.map(r => r.duration ? r.duration / 1000 : null), borderColor: '#f0883e', backgroundColor: '#f0883e22', tension: 0.3, fill: true }]
-    },
-    options: { ...chartDefaults, scales: { ...chartDefaults.scales, y: { ...chartDefaults.scales.y, title: { display: true, text: 'seconds', color: '#484f58' } } } }
-  });
-}
-
-function renderCategoryChart(runs) {
-  if (runs.length === 0) return;
-  const latest = runs[runs.length - 1];
-  const cats = latest.categories || {};
-  const labels = Object.keys(cats).sort();
-  charts.category = new Chart(document.getElementById('categoryChart'), {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [
-        { label: 'Passed', data: labels.map(l => cats[l].passed), backgroundColor: '#3fb950' },
-        { label: 'Failed', data: labels.map(l => cats[l].failed), backgroundColor: '#f85149' }
-      ]
-    },
-    options: { ...chartDefaults, scales: { ...chartDefaults.scales, x: { ...chartDefaults.scales.x, stacked: true }, y: { ...chartDefaults.scales.y, stacked: true, beginAtZero: true } } }
-  });
-}
-
-function renderLatestTable(runs) {
-  const el = document.getElementById('latestTable');
-  if (runs.length === 0) { el.innerHTML = '<p>No data</p>'; return; }
-  const latest = runs[runs.length - 1];
-  const scenarios = latest.scenarios || [];
-  if (scenarios.length === 0) { el.innerHTML = '<p>No scenario details in latest run</p>'; return; }
-
-  let html = '<table><thead><tr><th>Scenario</th><th>Category</th><th>Status</th><th>Duration</th><th>Score</th><th>Error</th></tr></thead><tbody>';
-  for (const s of scenarios.sort((a,b) => a.id.localeCompare(b.id))) {
-    const status = s.passed ? '<span class="pass">PASS</span>' : '<span class="fail">FAIL</span>';
-    const dur = formatDuration(scenarioDuration(s));
-    const score = s.score != null ? `<span class="score">${s.score}</span>` : '-';
-    const err = s.error ? `<span class="fail">${s.error.substring(0, 80)}</span>` : '-';
-    html += `<tr><td>${s.id}</td><td>${s.category||'-'}</td><td>${status}</td><td>${dur}</td><td>${score}</td><td>${err}</td></tr>`;
-  }
-  html += '</tbody></table>';
-  el.innerHTML = html;
-}
-
-async function loadAndRender() {
-  const project = document.getElementById('projectSelect').value;
-  const range = parseInt(document.getElementById('rangeSelect').value);
-
-  try {
-    const resp = await fetch(`data/${project}/history.json`);
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    let runs = await resp.json();
-    if (range > 0) runs = runs.slice(-range);
-
-    destroyCharts();
-    const regressions = detectRegressions(runs);
-    renderAlerts(regressions);
-    renderStats(runs);
-    renderPassRateChart(runs);
-    renderScoresChart(runs);
-    renderDurationChart(runs);
-    renderCategoryChart(runs);
-    renderLatestTable(runs);
-  } catch (e) {
-    document.getElementById('stats').innerHTML = `<div class="loading">Error loading data: ${e.message}</div>`;
-    document.getElementById('alerts').innerHTML = '';
+async function go(){
+  const project=$('proj').value;
+  const range=parseInt($('range').value);
+  try{
+    const r=await fetch(`data/${project}/history.json`);
+    if(!r.ok)throw new Error(`HTTP ${r.status}`);
+    let runs=await r.json();
+    if(range>0)runs=runs.slice(-range);
+    kill();
+    rAlerts(regressions(runs));
+    rStats(runs);
+    rPassRate(runs);
+    rScores(runs);
+    rDuration(runs);
+    rCats(runs);
+    rTable(runs);
+  }catch(e){
+    $('stats').innerHTML=`<div class="empty">Error: ${e.message}</div>`;
+    $('alerts').innerHTML='';
   }
 }
 
-document.getElementById('projectSelect').addEventListener('change', loadAndRender);
-document.getElementById('rangeSelect').addEventListener('change', loadAndRender);
-loadAndRender();
+$('proj').addEventListener('change',go);
+$('range').addEventListener('change',go);
+go();
 </script>
 </body>
 </html>
