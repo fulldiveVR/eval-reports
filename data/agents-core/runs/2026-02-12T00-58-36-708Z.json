@@ -1,0 +1,53 @@
+{
+  "project": "agents-core",
+  "timestamp": "2026-02-12T00:58:36.708Z",
+  "gitSha": "e555716",
+  "gitRef": "main",
+  "categories": [
+    {
+      "category": "context-manager",
+      "total": 6,
+      "passed": 4,
+      "failed": 2,
+      "score": 67,
+      "scenarios": [
+        {
+          "id": "compression-quality-ab",
+          "success": false,
+          "durationMs": 288445
+        },
+        {
+          "id": "token-estimation-accuracy",
+          "success": true,
+          "durationMs": 10286
+        },
+        {
+          "id": "full-pipeline-e2e",
+          "success": true,
+          "durationMs": 29298
+        },
+        {
+          "id": "context-quality-after-compression",
+          "success": false,
+          "durationMs": 33245
+        },
+        {
+          "id": "hybrid-context-assembly",
+          "success": true,
+          "durationMs": 21710
+        },
+        {
+          "id": "running-summary-generation",
+          "success": true,
+          "durationMs": 17643
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "total": 6,
+    "passed": 4,
+    "failed": 2,
+    "score": 67
+  }
+}
