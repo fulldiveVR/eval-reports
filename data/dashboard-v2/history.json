@@ -308,5 +308,46 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "eval-ci-5",
+    "timestamp": "2026-02-12T03:52:53.854Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "9bd60a0",
+    "branch": "main",
+    "model": "openrouter/anthropic/claude-haiku-4.5",
+    "duration": 20970,
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "passRate": 100
+    },
+    "categories": {
+      "sandbox": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "scenarios": [
+      {
+        "id": "basic-e2b-opencode",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 9533,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "file-operations",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 11437,
+        "score": null,
+        "error": null
+      }
+    ]
   }
 ]
