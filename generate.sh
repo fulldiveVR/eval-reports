@@ -1,3 +1,32 @@
+#!/usr/bin/env bash
+# Generate index.html from all project data in data/*/history.json
+# Usage: ./generate.sh
+
+set -euo pipefail
+cd "$(dirname "$0")"
+
+# Auto-discover projects
+PROJECTS=()
+for dir in data/*/; do
+  if [ -f "${dir}history.json" ]; then
+    PROJECTS+=("$(basename "$dir")")
+  fi
+done
+
+if [ ${#PROJECTS[@]} -eq 0 ]; then
+  echo "No projects found in data/"
+  exit 0
+fi
+
+echo "Found projects: ${PROJECTS[*]}"
+
+# Build <option> tags
+OPTIONS=""
+for p in "${PROJECTS[@]}"; do
+  OPTIONS="${OPTIONS}    <option value=\"${p}\">${p}</option>\n"
+done
+
+cat > index.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,8 +71,14 @@
 <div class="controls">
   <label>Project:</label>
   <select id="projectSelect">
-    <option value="agents-core">agents-core</option>
-    <option value="dashboard-v2">dashboard-v2</option>
+HTMLEOF
+
+# Inject project options
+for p in "${PROJECTS[@]}"; do
+  echo "    <option value=\"${p}\">${p}</option>" >> index.html
+done
+
+cat >> index.html << 'HTMLEOF'
   </select>
   <label>Last:</label>
   <select id="rangeSelect">
@@ -328,3 +363,6 @@ loadAndRender();
 </script>
 </body>
 </html>
+HTMLEOF
+
+echo "Generated index.html with projects: ${PROJECTS[*]}"
