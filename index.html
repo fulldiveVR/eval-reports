@@ -42,7 +42,7 @@
 <div class="controls">
   <label>Project:</label>
   <select id="projectSelect">
-    <option value="dashboard-v2">dashboard-v2</option>
+    <option value="agents-core">agents-core</option>
   </select>
   <label>Last:</label>
   <select id="rangeSelect">
@@ -285,7 +285,7 @@ function renderLatestTable(runs) {
   let html = '<table><thead><tr><th>Scenario</th><th>Category</th><th>Status</th><th>Duration</th><th>Score</th><th>Error</th></tr></thead><tbody>';
   for (const s of scenarios.sort((a,b) => a.id.localeCompare(b.id))) {
     const status = s.passed ? '<span class="pass">PASS</span>' : '<span class="fail">FAIL</span>';
-    const dur = s.duration ? formatDuration(s.duration) : '-';
+    const dur = (s.duration || s.durationMs) ? formatDuration(s.duration || s.durationMs) : '-';
     const score = s.score != null ? `<span class="score">${s.score}</span>` : '-';
     const err = s.error ? `<span class="fail">${s.error.substring(0, 80)}</span>` : '-';
     html += `<tr><td>${s.id}</td><td>${s.category||'-'}</td><td>${status}</td><td>${dur}</td><td>${score}</td><td>${err}</td></tr>`;
