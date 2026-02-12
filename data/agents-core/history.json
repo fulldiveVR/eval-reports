@@ -169,5 +169,62 @@
         "total": 6
       }
     }
+  },
+  {
+    "timestamp": "2026-02-12T01:13:55.123Z",
+    "gitSha": "c4de0c9",
+    "score": 100,
+    "duration": 202021,
+    "summary": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "passRate": 100
+    },
+    "scenarios": [
+      {
+        "id": "compression-quality-ab",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 97186
+      },
+      {
+        "id": "token-estimation-accuracy",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 10948
+      },
+      {
+        "id": "full-pipeline-e2e",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 26139
+      },
+      {
+        "id": "context-quality-after-compression",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 36260
+      },
+      {
+        "id": "hybrid-context-assembly",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 17105
+      },
+      {
+        "id": "running-summary-generation",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 14383
+      }
+    ],
+    "categories": {
+      "context-manager": {
+        "passed": 6,
+        "failed": 0,
+        "total": 6
+      }
+    }
   }
 ]
