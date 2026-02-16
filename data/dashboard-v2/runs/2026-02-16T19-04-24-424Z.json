@@ -1,0 +1,46 @@
+{
+  "runId": "eval-ci-33",
+  "timestamp": "2026-02-16T19:04:24.424Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "b1701e5",
+  "branch": "main",
+  "model": "unknown",
+  "duration": 31566,
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "passRate": 100
+  },
+  "categories": {
+    "llm": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "sandbox": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "scenarios": [
+    {
+      "id": "basic-e2b-opencode",
+      "category": "sandbox",
+      "passed": true,
+      "duration": 5021,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "llm-01-market-research",
+      "category": "llm",
+      "passed": true,
+      "duration": 26545,
+      "score": 98.3,
+      "error": null
+    }
+  ]
+}
