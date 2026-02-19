@@ -2105,5 +2105,83 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "eval-ci-45",
+    "timestamp": "2026-02-19T04:05:03.393Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "d18f15e",
+    "branch": "main",
+    "model": "unknown",
+    "duration": 502061,
+    "summary": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "passRate": 100
+    },
+    "categories": {
+      "llm": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "sandbox": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    "scenarios": [
+      {
+        "id": "basic-e2b-opencode",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 8603,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "emoji-prompt",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 10183,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "file-operations",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 13530,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "llm-01-market-research",
+        "category": "llm",
+        "passed": true,
+        "duration": 40767,
+        "score": 98.3,
+        "error": null
+      },
+      {
+        "id": "llm-02-marketing-strategy",
+        "category": "llm",
+        "passed": true,
+        "duration": 191797,
+        "score": 98.3,
+        "error": null
+      },
+      {
+        "id": "llm-03-crm-integration",
+        "category": "llm",
+        "passed": true,
+        "duration": 237181,
+        "score": 98.3,
+        "error": null
+      }
+    ]
   }
 ]
