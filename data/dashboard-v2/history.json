@@ -2183,5 +2183,630 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "local-1771483653651",
+    "timestamp": "2026-02-19T06:47:33.651Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "f525334",
+    "branch": "main",
+    "model": "openrouter/anthropic/claude-haiku-4.5",
+    "duration": 4069979,
+    "summary": {
+      "total": 70,
+      "passed": 53,
+      "failed": 17,
+      "passRate": 75.7
+    },
+    "categories": {
+      "agent": {
+        "total": 3,
+        "passed": 2,
+        "failed": 1
+      },
+      "intent-detection": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      },
+      "llm": {
+        "total": 9,
+        "passed": 8,
+        "failed": 1
+      },
+      "orchestration": {
+        "total": 9,
+        "passed": 7,
+        "failed": 2
+      },
+      "persistence": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "prompt-eval": {
+        "total": 35,
+        "passed": 23,
+        "failed": 12
+      },
+      "sandbox": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "vfs": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "benchmark": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "scenarios": [
+      {
+        "id": "agent-02-transformer",
+        "category": "agent",
+        "passed": true,
+        "duration": 26075,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "agent-05-schedule-replay",
+        "category": "agent",
+        "passed": true,
+        "duration": 28695,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "basic-e2b-opencode",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 16251,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "benchmark-openrouter-x-ai-grok-4-fast-1769436496866",
+        "category": "benchmark",
+        "passed": true,
+        "duration": null,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-agent-verification",
+        "category": "agent",
+        "passed": false,
+        "duration": 185722,
+        "score": null,
+        "error": "Timeout waiting for task 458598fb-0c13-4c87-85f4-eeb93376c242 to complete after 180000ms"
+      },
+      {
+        "id": "bg-aso-research/bg-baseline",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 56467,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-aso-research/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 76527,
+        "score": null,
+        "error": "The agent demonstrated excellent task understanding and delivered a comprehensive, well-structured markdown report with all required components (10 keywords, 3 competitors, 5 gaps). However, the compe"
+      },
+      {
+        "id": "bg-aso-research/bg-v2",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 68054,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-aso-research/bg-v3",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 59210,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-market-research/bg-baseline",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 62078,
+        "score": null,
+        "error": "The agent created a well-structured document with professional formatting but failed the critical requirement of conducting actual research. The investor names, firm details, and event information app"
+      },
+      {
+        "id": "bg-market-research/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 392658,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-market-research/bg-v2",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 63656,
+        "score": null,
+        "error": "The agent understood the task well and created a comprehensive, professionally structured document with actionable strategies and templates. However, the response critically fails the rubric's core re"
+      },
+      {
+        "id": "bg-market-research/bg-v3",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 58681,
+        "score": null,
+        "error": "The agent demonstrated excellent research methodology and created highly detailed, real investor data with verifiable firms (Monashees, Kaszek, Endeavor, SoftBank LatAm), events, and actionable outrea"
+      },
+      {
+        "id": "bg-play-store-listing/bg-baseline",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 71418,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-play-store-listing/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 77229,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-play-store-listing/bg-v2",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 53408,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-play-store-listing/bg-v3",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 67733,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-renters-guide/bg-baseline",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 74662,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-renters-guide/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 166384,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-renters-guide/bg-v2",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 76245,
+        "score": null,
+        "error": "The agent demonstrated excellent task understanding and structured a comprehensive approach with detailed research planning. However, the output is severely truncated mid-sentence in the hurricane pre"
+      },
+      {
+        "id": "bg-renters-guide/bg-v3",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 70136,
+        "score": null,
+        "error": "The agent demonstrated strong understanding of the comprehensive renter's guide requirements and began creating detailed, location-specific content with accurate Florida legal information and practica"
+      },
+      {
+        "id": "bg-repo-analysis/bg-baseline",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 33354,
+        "score": null,
+        "error": "The agent demonstrated strong understanding of the task by successfully cloning both repositories and conducting deep exploration of source code files, examining multiple TypeScript and Rust files to "
+      },
+      {
+        "id": "bg-repo-analysis/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 226470,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis/bg-v2",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 37778,
+        "score": null,
+        "error": "The agent correctly understood the task and cloned both repositories, exploring source code files extensively. However, the analysis was severely incomplete - the output file was truncated mid-sentenc"
+      },
+      {
+        "id": "bg-repo-analysis/bg-v3",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 39681,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "emoji-prompt",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 15814,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-creative-content/fg-baseline",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 4232,
+        "score": null,
+        "error": "The agent completely failed to deliver the requested LinkedIn article, instead asking clarifying questions. While the questions show good understanding of the task requirements, the user already provi"
+      },
+      {
+        "id": "fg-creative-content/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 2213,
+        "score": null,
+        "error": "The agent correctly identified the need to check writing style but failed to deliver the requested LinkedIn article. It violated the CHAT-FIRST policy by calling list_directory instead of just writing"
+      },
+      {
+        "id": "fg-creative-content/fg-v2",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6535,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-multilingual/fg-baseline",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4376,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-multilingual/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6440,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-multilingual/fg-v2",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4016,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-pricing-analysis/fg-baseline",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 10824,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-pricing-analysis/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 10481,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-pricing-analysis/fg-v2",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 13981,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-search-query/fg-baseline",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6650,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-search-query/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 1659,
+        "score": null,
+        "error": "The agent correctly identified the need for current information and appropriately used web_search tools with recent filters rather than hallucinating facts about the competitive landscape. However, it"
+      },
+      {
+        "id": "fg-search-query/fg-v2",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 9120,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-skill-explanation/fg-baseline",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3272,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "fg-skill-explanation/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 1068,
+        "score": null,
+        "error": "The agent correctly understood the typo-laden question and appropriately attempted to read the skill documentation file, showing good comprehension and relevance. However, the response is incomplete a"
+      },
+      {
+        "id": "fg-skill-explanation/fg-v2",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3952,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "file-operations",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 16329,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "intent-detection-all",
+        "category": "intent-detection",
+        "passed": false,
+        "duration": 775936,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "llm-01-market-research",
+        "category": "llm",
+        "passed": true,
+        "duration": 23189,
+        "score": 98.3,
+        "error": null
+      },
+      {
+        "id": "llm-02-marketing-strategy",
+        "category": "llm",
+        "passed": true,
+        "duration": 131994,
+        "score": 94,
+        "error": null
+      },
+      {
+        "id": "llm-03-crm-integration",
+        "category": "llm",
+        "passed": true,
+        "duration": 115737,
+        "score": 85,
+        "error": null
+      },
+      {
+        "id": "llm-04-ga4-reports",
+        "category": "llm",
+        "passed": true,
+        "duration": 162016,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "llm-05-repo-analysis",
+        "category": "llm",
+        "passed": true,
+        "duration": 90004,
+        "score": 98.5,
+        "error": null
+      },
+      {
+        "id": "llm-06-repo-news-prompts",
+        "category": "llm",
+        "passed": false,
+        "duration": 44,
+        "score": null,
+        "error": "Wize Up workspace not found: 5333082f-661a-473a-88e4-548827a8a433"
+      },
+      {
+        "id": "llm-07-api-data-fetch",
+        "category": "llm",
+        "passed": true,
+        "duration": 39868,
+        "score": 95,
+        "error": null
+      },
+      {
+        "id": "llm-08-skill-discovery",
+        "category": "llm",
+        "passed": true,
+        "duration": 60286,
+        "score": 97.7,
+        "error": null
+      },
+      {
+        "id": "llm-09-skill-enriched-prompt",
+        "category": "llm",
+        "passed": true,
+        "duration": 71168,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "log-streaming",
+        "category": "persistence",
+        "passed": true,
+        "duration": 16441,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "orchestration-01-basic-execution",
+        "category": "orchestration",
+        "passed": true,
+        "duration": 16346,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "orchestration-02-status-polling",
+        "category": "orchestration",
+        "passed": false,
+        "duration": 529,
+        "score": null,
+        "error": "Assertion failed: status should be QUEUED or PROVISIONING"
+      },
+      {
+        "id": "orchestration-03-task-cancellation",
+        "category": "orchestration",
+        "passed": true,
+        "duration": 5304,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "orchestration-04-timeout-handling",
+        "category": "orchestration",
+        "passed": true,
+        "duration": 4304,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "orchestration-05-concurrent-tasks",
+        "category": "orchestration",
+        "passed": true,
+        "duration": 16336,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "orchestration-06-agent-persistence",
+        "category": "orchestration",
+        "passed": true,
+        "duration": 32620,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "orchestration-07-error-recovery",
+        "category": "orchestration",
+        "passed": true,
+        "duration": 32604,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "orchestration-08-log-streaming",
+        "category": "orchestration",
+        "passed": true,
+        "duration": 16074,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "orchestration-11-vfs-file-operations",
+        "category": "orchestration",
+        "passed": false,
+        "duration": 97613,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "ssh-git-clone",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 6465,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "task-lifecycle",
+        "category": "persistence",
+        "passed": true,
+        "duration": 15682,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "tool-capture",
+        "category": "persistence",
+        "passed": true,
+        "duration": 31885,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "vfs-agent-writes-to-workspace",
+        "category": "vfs",
+        "passed": true,
+        "duration": 16369,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "vfs-initial-file-load",
+        "category": "vfs",
+        "passed": true,
+        "duration": 16369,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "vfs-sync-visibility",
+        "category": "vfs",
+        "passed": true,
+        "duration": 17890,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "vfs-workfolder-isolation",
+        "category": "vfs",
+        "passed": true,
+        "duration": 45979,
+        "score": null,
+        "error": null
+      },
+      {
+        "id": "workspace-env-ssh",
+        "category": "sandbox",
+        "passed": true,
+        "duration": 1393,
+        "score": null,
+        "error": null
+      }
+    ]
   }
 ]
