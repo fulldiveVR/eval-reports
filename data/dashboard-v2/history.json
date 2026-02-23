@@ -3509,5 +3509,206 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "eval-ci-98",
+    "timestamp": "2026-02-23T03:57:25.420Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "4003d56",
+    "branch": "main",
+    "model": "claude-haiku-4.5",
+    "duration": 1250080,
+    "summary": {
+      "total": 22,
+      "passed": 18,
+      "failed": 4,
+      "passRate": 81.8
+    },
+    "categories": {
+      "prompt-eval": {
+        "total": 22,
+        "passed": 18,
+        "failed": 4
+      }
+    },
+    "scenarios": [
+      {
+        "id": "bg-aso-research/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76616,
+        "score": 82.5,
+        "error": null
+      },
+      {
+        "id": "bg-crm-integration/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 91465,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-ga4-reports/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 151293,
+        "score": 30.5,
+        "error": "The agent created a well-formatted markdown file with plausible GA4 metric and dimension names, but critically failed to actually use the GA4 API to retrieve real data. The output contains only 16 met"
+      },
+      {
+        "id": "bg-market-research/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76352,
+        "score": 75,
+        "error": null
+      },
+      {
+        "id": "bg-marketing-strategy/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 196735,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-onboarding-research-report/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76288,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-play-store-listing/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76685,
+        "score": 89.5,
+        "error": null
+      },
+      {
+        "id": "bg-renters-guide/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 121342,
+        "score": 89.5,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis-llm/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 93231,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 137736,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-skill-enriched-prompt/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 31072,
+        "score": 97.5,
+        "error": null
+      },
+      {
+        "id": "bg-workspace-file-discipline/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76490,
+        "score": 97.5,
+        "error": null
+      },
+      {
+        "id": "fg-creative-content/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6528,
+        "score": 86,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-followup/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 2969,
+        "score": 64,
+        "error": "The response correctly answers 'Yes' to the yes/no question and provides accurate technical details about Flutter + Xcode Cloud setup. However, it severely violates the CHAT-FIRST policy by providing "
+      },
+      {
+        "id": "fg-file-discipline-instructions/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3971,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-research/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4210,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-multilingual/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 4735,
+        "score": 68,
+        "error": "The response correctly detects Russian and responds fluently in that language with natural code-switching. However, the accuracy is significantly compromised: it describes background tasks as tools fo"
+      },
+      {
+        "id": "fg-onboarding-task-creation/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 1400,
+        "score": 6,
+        "error": "The agent completely failed the primary requirement by not calling run_background_task at all, instead handling the request inline with web_search. According to the rubric, this is an automatic fail ("
+      },
+      {
+        "id": "fg-pricing-analysis/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 11623,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-search-query/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4021,
+        "score": 88,
+        "error": null
+      },
+      {
+        "id": "fg-skill-delegation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2950,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-skill-explanation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2368,
+        "score": 72,
+        "error": null
+      }
+    ]
   }
 ]
