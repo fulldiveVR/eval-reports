@@ -1,0 +1,201 @@
+{
+  "runId": "eval-ci-100",
+  "timestamp": "2026-02-24T03:54:59.212Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "932678f",
+  "branch": "main",
+  "model": "claude-haiku-4.5",
+  "duration": 1189618,
+  "summary": {
+    "total": 22,
+    "passed": 18,
+    "failed": 4,
+    "passRate": 81.8
+  },
+  "categories": {
+    "prompt-eval": {
+      "total": 22,
+      "passed": 18,
+      "failed": 4
+    }
+  },
+  "scenarios": [
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 77270,
+      "score": 80,
+      "error": null
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 92101,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 61701,
+      "score": 27.5,
+      "error": "The agent misunderstood the task by assuming credentials were missing when they should have been provided in the environment. It created a well-structured Python script and markdown file, but failed t"
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 121582,
+      "score": 75,
+      "error": null
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 196062,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 46767,
+      "score": 0,
+      "error": "The agent created an HTML file with good design and real research content, BUT it failed the primary test requirement: the file does NOT appear in the '## Files Created in Workspace' section, meaning "
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 62312,
+      "score": 84.5,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 151562,
+      "score": 82.5,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 95130,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 109304,
+      "score": 99,
+      "error": null
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 31722,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 91879,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5364,
+      "score": 34,
+      "error": "The agent failed to deliver the requested LinkedIn article, instead asking clarifying questions despite having sufficient context from the conversation (user's voice: technical, casual, uses 'this shi"
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3703,
+      "score": 66,
+      "error": "The response correctly answers YES and provides accurate technical details about Flutter on Xcode Cloud. However, it severely violates the CHAT-FIRST policy by providing a comprehensive tutorial with "
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3745,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4512,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4968,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3766,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12279,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5411,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3055,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5423,
+      "score": 86,
+      "error": null
+    }
+  ]
+}
