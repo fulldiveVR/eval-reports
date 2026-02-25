@@ -1,0 +1,201 @@
+{
+  "runId": "eval-ci-107",
+  "timestamp": "2026-02-25T03:54:50.148Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "7a41ca7",
+  "branch": "main",
+  "model": "claude-haiku-4.5",
+  "duration": 1146380,
+  "summary": {
+    "total": 22,
+    "passed": 17,
+    "failed": 5,
+    "passRate": 77.3
+  },
+  "categories": {
+    "prompt-eval": {
+      "total": 22,
+      "passed": 17,
+      "failed": 5
+    }
+  },
+  "scenarios": [
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 46589,
+      "score": 80,
+      "error": null
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 77040,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 137333,
+      "score": 63,
+      "error": "The agent understood the task well and created properly structured output with appropriate scripts for GA4 API access. However, without actual credentials.json, it fell back to creating a static docum"
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 76609,
+      "score": 65,
+      "error": "The agent produced a well-structured, comprehensive report with proper formatting and all required sections (5 VC firms, 5 events, outreach strategy). However, the content depth is severely compromise"
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 136880,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 61268,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 61936,
+      "score": 84.5,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 166283,
+      "score": 80,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 95880,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 109702,
+      "score": 96.5,
+      "error": null
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 46325,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 91433,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1839,
+      "score": 42,
+      "error": "The agent correctly identified the task and started with appropriate tool usage (reading CLAUDE.md for context). However, it failed to complete the task - it only provided a brief intro about what it "
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4171,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 2534,
+      "score": 6,
+      "error": "The agent completely failed the primary test by asking clarifying questions instead of providing step-by-step instructions directly in chat. The user explicitly requested instructions (not setup help "
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5062,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3997,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3064,
+      "score": 4,
+      "error": "The agent completely failed the core requirement by not calling run_background_task at all, instead attempting to handle the Deep Research request inline with web_search. This violates the expected be"
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8874,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4080,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3090,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2391,
+      "score": 82,
+      "error": null
+    }
+  ]
+}
