@@ -1,0 +1,273 @@
+{
+  "runId": "eval-ci-120",
+  "timestamp": "2026-02-26T03:47:28.020Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "92cfaa6",
+  "branch": "main",
+  "model": "claude-haiku-4.5",
+  "duration": 76924,
+  "summary": {
+    "total": 31,
+    "passed": 15,
+    "failed": 16,
+    "passRate": 48.4
+  },
+  "categories": {
+    "prompt-eval": {
+      "total": 31,
+      "passed": 15,
+      "failed": 16
+    }
+  },
+  "scenarios": [
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Rate limit exceeded, please try again later - you have reached the maximum number of concurrent E2B sandboxes (20). If you need more, please visit 'https://e2b.dev/docs/billing'"
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5124,
+      "score": 58,
+      "error": "The agent correctly delegated to run_background_task and included comprehensive data requirements (indexing, top pages, conversion events, markdown output). However, it critically failed to instruct t"
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6354,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3599,
+      "score": 64,
+      "error": "The response correctly answers 'Yes' and provides accurate technical details about Flutter setup with Xcode Cloud. However, it catastrophically violates the CHAT-FIRST policy by formatting the answer "
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3244,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4026,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4732,
+      "score": 76,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4025,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10407,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 2336,
+      "score": 60,
+      "error": "The agent perfectly executed the memory update calls with accurate categorization (identity for VP role, goal for GCP migration) and correct content, demonstrating excellent prompt compliance and accu"
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2013,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5696,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2505,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4760,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3322,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 2726,
+      "score": 26,
+      "error": "The agent correctly identified and saved key facts (tech lead role, team size, tech stack) using update_user_memory without being prompted, demonstrating strong prompt compliance. However, it complete"
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1305,
+      "score": 72,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5335,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2926,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2489,
+      "score": 86,
+      "error": null
+    }
+  ]
+}
