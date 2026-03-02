@@ -7353,5 +7353,278 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "eval-ci-135",
+    "timestamp": "2026-03-02T03:53:25.837Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "2bc70f3",
+    "branch": "main",
+    "model": "claude-haiku-4.5",
+    "duration": 1200133,
+    "summary": {
+      "total": 31,
+      "passed": 28,
+      "failed": 3,
+      "passRate": 90.3
+    },
+    "categories": {
+      "prompt-eval": {
+        "total": 31,
+        "passed": 28,
+        "failed": 3
+      }
+    },
+    "scenarios": [
+      {
+        "id": "bg-aso-research/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 62398,
+        "score": 80,
+        "error": null
+      },
+      {
+        "id": "bg-crm-integration/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 91623,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-ga4-reports/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 77313,
+        "score": 37.5,
+        "error": "The agent produced a well-formatted markdown file with metrics and dimensions, but the content is fabricated rather than retrieved from the actual GA4 API. The counts (27 metrics, 70 dimensions) are s"
+      },
+      {
+        "id": "bg-market-research/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 62003,
+        "score": 48,
+        "error": "The agent understood the task structure and created a well-formatted document with proper sections. However, the response contains critical fabrication issues - several cited 'LatAm portfolio companie"
+      },
+      {
+        "id": "bg-marketing-strategy/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 167226,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-onboarding-research-report/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76660,
+        "score": 97.5,
+        "error": null
+      },
+      {
+        "id": "bg-play-store-listing/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 77452,
+        "score": 89.5,
+        "error": null
+      },
+      {
+        "id": "bg-renters-guide/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 136701,
+        "score": 80,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis-llm/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 96524,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 140575,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-skill-enriched-prompt/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 46577,
+        "score": 97.5,
+        "error": null
+      },
+      {
+        "id": "bg-workspace-file-discipline/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76458,
+        "score": 92.5,
+        "error": null
+      },
+      {
+        "id": "fg-bg-task-context-enrichment/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4996,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-creative-content/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6066,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-followup/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4410,
+        "score": 86,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-instructions/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4376,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-research/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4321,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-multilingual/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5869,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-onboarding-task-creation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5657,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-pricing-analysis/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 8821,
+        "score": 94,
+        "error": null
+      },
+      {
+        "id": "fg-profile-explicit-keep-in-mind/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3156,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-fact-correction/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2668,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-memory/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 5300,
+        "score": 66,
+        "error": "The agent appropriately used ask_user_questions to gather requirements before providing implementation guidance, and naturally assumed the NestJS + MongoDB stack without explicitly referencing the pro"
+      },
+      {
+        "id": "fg-profile-no-save-chitchat/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2022,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-ephemeral/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3024,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-sensitive/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2072,
+        "score": 70,
+        "error": null
+      },
+      {
+        "id": "fg-profile-organic-discovery/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 8590,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-tool-usage/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3995,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-search-query/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5288,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-skill-delegation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5152,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-skill-explanation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2840,
+        "score": 82,
+        "error": null
+      }
+    ]
   }
 ]
