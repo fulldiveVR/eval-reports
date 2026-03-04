@@ -226,5 +226,68 @@
         "total": 6
       }
     }
+  },
+  {
+    "timestamp": "2026-03-04T22:40:52.522Z",
+    "gitSha": "41f747a",
+    "score": 100,
+    "duration": 412860,
+    "summary": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "passRate": 100
+    },
+    "scenarios": [
+      {
+        "id": "tool-boundary-safety-gh27",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 179274
+      },
+      {
+        "id": "compression-quality-ab",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 116430
+      },
+      {
+        "id": "token-estimation-accuracy",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 9582
+      },
+      {
+        "id": "full-pipeline-e2e",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 32333
+      },
+      {
+        "id": "context-quality-after-compression",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 38025
+      },
+      {
+        "id": "hybrid-context-assembly",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 17062
+      },
+      {
+        "id": "running-summary-generation",
+        "category": "context-manager",
+        "passed": true,
+        "durationMs": 20154
+      }
+    ],
+    "categories": {
+      "context-manager": {
+        "passed": 7,
+        "failed": 0,
+        "total": 7
+      }
+    }
   }
 ]
