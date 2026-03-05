@@ -1,0 +1,58 @@
+{
+  "project": "agents-core",
+  "timestamp": "2026-03-05T01:59:40.307Z",
+  "gitSha": "3e7201c",
+  "gitRef": "HEAD",
+  "categories": [
+    {
+      "category": "context-manager",
+      "total": 7,
+      "passed": 6,
+      "failed": 1,
+      "score": 86,
+      "scenarios": [
+        {
+          "id": "tool-boundary-safety-gh27",
+          "success": false,
+          "durationMs": 170235
+        },
+        {
+          "id": "compression-quality-ab",
+          "success": true,
+          "durationMs": 104419
+        },
+        {
+          "id": "token-estimation-accuracy",
+          "success": true,
+          "durationMs": 10428
+        },
+        {
+          "id": "full-pipeline-e2e",
+          "success": true,
+          "durationMs": 30991
+        },
+        {
+          "id": "context-quality-after-compression",
+          "success": true,
+          "durationMs": 36445
+        },
+        {
+          "id": "hybrid-context-assembly",
+          "success": true,
+          "durationMs": 15311
+        },
+        {
+          "id": "running-summary-generation",
+          "success": true,
+          "durationMs": 16290
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "total": 7,
+    "passed": 6,
+    "failed": 1,
+    "score": 86
+  }
+}
