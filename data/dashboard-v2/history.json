@@ -8667,5 +8667,38 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "eval-ci-153",
+    "timestamp": "2026-03-05T03:08:16.466Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "76a11bb",
+    "branch": "main",
+    "model": "claude-haiku-4.5",
+    "duration": 196966,
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "passRate": 100
+    },
+    "categories": {
+      "prompt-eval": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "scenarios": [
+      {
+        "id": "bg-marketing-strategy/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 196966,
+        "score": 100,
+        "error": null
+      }
+    ]
   }
 ]
