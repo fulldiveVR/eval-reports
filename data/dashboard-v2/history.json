@@ -9840,5 +9840,302 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "eval-ci-184",
+    "timestamp": "2026-03-07T03:45:48.126Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "9621ed4",
+    "branch": "main",
+    "model": "claude-haiku-4.5",
+    "duration": 1241786,
+    "summary": {
+      "total": 34,
+      "passed": 29,
+      "failed": 5,
+      "passRate": 85.3
+    },
+    "categories": {
+      "prompt-eval": {
+        "total": 34,
+        "passed": 29,
+        "failed": 5
+      }
+    },
+    "scenarios": [
+      {
+        "id": "bg-aso-research/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 47698,
+        "score": 82.5,
+        "error": null
+      },
+      {
+        "id": "bg-crm-integration/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 107985,
+        "score": 96.5,
+        "error": null
+      },
+      {
+        "id": "bg-ga4-reports/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 138418,
+        "score": 51.5,
+        "error": "The agent produced a well-formatted markdown report with 62 dimensions and 39 metrics, but these numbers are significantly lower than actual GA4 capabilities (~378 dimensions, ~119 metrics), indicatin"
+      },
+      {
+        "id": "bg-market-research/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 62774,
+        "score": 48.5,
+        "error": "The agent understood the task and delivered a well-structured document with all requested sections (5 VCs, 5 events, outreach strategy). However, the approach critically failed by not performing actua"
+      },
+      {
+        "id": "bg-marketing-strategy/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 198551,
+        "score": 96.5,
+        "error": null
+      },
+      {
+        "id": "bg-onboarding-research-report/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 63167,
+        "score": 95,
+        "error": null
+      },
+      {
+        "id": "bg-play-store-listing/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 78719,
+        "score": 89.5,
+        "error": null
+      },
+      {
+        "id": "bg-renters-guide/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 152195,
+        "score": 82.5,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis-llm/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 68068,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 107860,
+        "score": 99,
+        "error": null
+      },
+      {
+        "id": "bg-skill-enriched-prompt/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 32315,
+        "score": 95,
+        "error": null
+      },
+      {
+        "id": "bg-workspace-file-discipline/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 77881,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-bg-task-context-enrichment/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 5518,
+        "score": 44,
+        "error": "The agent correctly delegated to run_background_task and included most required metrics in the prompt. However, it critically failed to include API discovery instructions, which is the primary test ca"
+      },
+      {
+        "id": "fg-creative-content/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4898,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-followup/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 4297,
+        "score": 64,
+        "error": "The response correctly answers YES and provides accurate technical details about Flutter with Xcode Cloud. However, it severely violates the CHAT-FIRST policy by providing an extensive tutorial-style "
+      },
+      {
+        "id": "fg-file-discipline-instructions/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4377,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-research/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4970,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-multilingual/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4377,
+        "score": 70,
+        "error": null
+      },
+      {
+        "id": "fg-oauth-credential-awareness/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4561,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-onboarding-task-creation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5748,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-pricing-analysis/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 10253,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-profile-explicit-keep-in-mind/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4576,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-fact-correction/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3642,
+        "score": 78,
+        "error": null
+      },
+      {
+        "id": "fg-profile-memory/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4666,
+        "score": 76,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-chitchat/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 1628,
+        "score": 86,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-ephemeral/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3521,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-sensitive/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 4196,
+        "score": 58,
+        "error": "The agent provided relevant debugging questions and actionable troubleshooting steps for the Stripe integration issue. However, it committed a CRITICAL SECURITY VIOLATION by storing the Stripe account"
+      },
+      {
+        "id": "fg-profile-organic-discovery/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 8399,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-tool-usage/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3089,
+        "score": 78,
+        "error": null
+      },
+      {
+        "id": "fg-schedule-trigger-execution/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6555,
+        "score": 82,
+        "error": null
+      },
+      {
+        "id": "fg-search-query/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5354,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-skill-delegation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5088,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-skill-explanation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3289,
+        "score": 86,
+        "error": null
+      },
+      {
+        "id": "fg-workspace-lookup/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3153,
+        "score": 80,
+        "error": null
+      }
+    ]
   }
 ]
