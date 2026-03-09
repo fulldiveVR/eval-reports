@@ -10467,5 +10467,302 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "eval-ci-187",
+    "timestamp": "2026-03-09T03:54:57.215Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "c225b9f",
+    "branch": "main",
+    "model": "claude-haiku-4.5",
+    "duration": 1322444,
+    "summary": {
+      "total": 34,
+      "passed": 28,
+      "failed": 6,
+      "passRate": 82.4
+    },
+    "categories": {
+      "prompt-eval": {
+        "total": 34,
+        "passed": 28,
+        "failed": 6
+      }
+    },
+    "scenarios": [
+      {
+        "id": "bg-aso-research/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 65636,
+        "score": 90.5,
+        "error": null
+      },
+      {
+        "id": "bg-crm-integration/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 110978,
+        "score": 96.5,
+        "error": null
+      },
+      {
+        "id": "bg-ga4-reports/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 140334,
+        "score": 36.5,
+        "error": "The agent created output files but failed to actually query the GA4 API due to missing credentials handling. Instead of using the provided credentials.json or implementing proper credential discovery,"
+      },
+      {
+        "id": "bg-market-research/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 110501,
+        "score": 66,
+        "error": "The agent understood the task well and produced a comprehensive, professionally formatted 16KB document with all required sections. However, the content depth is significantly compromised by mixing re"
+      },
+      {
+        "id": "bg-marketing-strategy/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 170624,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-onboarding-research-report/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 65192,
+        "score": 80.5,
+        "error": null
+      },
+      {
+        "id": "bg-play-store-listing/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 81182,
+        "score": 89.5,
+        "error": null
+      },
+      {
+        "id": "bg-renters-guide/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 155368,
+        "score": 75,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis-llm/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 69455,
+        "score": 99,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 128062,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-skill-enriched-prompt/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 33608,
+        "score": 97.5,
+        "error": null
+      },
+      {
+        "id": "bg-workspace-file-discipline/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 80304,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-bg-task-context-enrichment/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 5559,
+        "score": 50,
+        "error": "The agent correctly delegated to run_background_task and included comprehensive deliverables covering all requested metrics. However, it critically failed to include API discovery instructions, hardco"
+      },
+      {
+        "id": "fg-creative-content/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5108,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-followup/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 3528,
+        "score": 64,
+        "error": "The response correctly answers 'YES' and provides accurate technical details about Flutter and Xcode Cloud integration. However, it catastrophically fails PromptCompliance by violating the CHAT-FIRST "
+      },
+      {
+        "id": "fg-file-discipline-instructions/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4456,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-research/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4140,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-multilingual/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5129,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-oauth-credential-awareness/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6247,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-onboarding-task-creation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5948,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-pricing-analysis/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 8935,
+        "score": 94,
+        "error": null
+      },
+      {
+        "id": "fg-profile-explicit-keep-in-mind/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3557,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-fact-correction/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3622,
+        "score": 84,
+        "error": null
+      },
+      {
+        "id": "fg-profile-memory/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6868,
+        "score": 86,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-chitchat/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2998,
+        "score": 86,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-ephemeral/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3312,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-sensitive/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4951,
+        "score": 80,
+        "error": null
+      },
+      {
+        "id": "fg-profile-organic-discovery/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 10604,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-tool-usage/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2948,
+        "score": 76,
+        "error": null
+      },
+      {
+        "id": "fg-schedule-trigger-execution/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 6756,
+        "score": 66,
+        "error": "The agent did call search tools targeting the right market data (oil prices, energy stocks, VIX, Iran news), which is the critical requirement. However, it severely violated PromptCompliance by first "
+      },
+      {
+        "id": "fg-search-query/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5025,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-skill-delegation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4947,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-skill-explanation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3263,
+        "score": 86,
+        "error": null
+      },
+      {
+        "id": "fg-workspace-lookup/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 3299,
+        "score": 60,
+        "error": "The agent correctly understood it should check the workspace rather than ask the user to clarify, which is good. However, it chose grep instead of the more appropriate list_files/read_file combination"
+      }
+    ]
   }
 ]
