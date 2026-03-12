@@ -1,0 +1,321 @@
+{
+  "runId": "eval-ci-201",
+  "timestamp": "2026-03-12T03:54:45.289Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "1333742",
+  "branch": "main",
+  "model": "claude-haiku-4.5",
+  "duration": 1421544,
+  "summary": {
+    "total": 37,
+    "passed": 28,
+    "failed": 9,
+    "passRate": 75.7
+  },
+  "categories": {
+    "prompt-eval": {
+      "total": 37,
+      "passed": 28,
+      "failed": 9
+    }
+  },
+  "scenarios": [
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 77319,
+      "score": 82.5,
+      "error": null
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 107388,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 121808,
+      "score": 30,
+      "error": "The agent created a well-formatted markdown file but failed to use the GA4 API to retrieve actual metadata. The output contains only 21 dimensions and 12 metrics with generic descriptions, far below G"
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 76918,
+      "score": 55.5,
+      "error": "The agent understood the task well and produced a professionally formatted, comprehensive document with all required sections. However, the critical failure is in research quality: the agent appears t"
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 212255,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 61758,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 77351,
+      "score": 89.5,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 121448,
+      "score": 80,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 156048,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 139765,
+      "score": 96.5,
+      "error": null
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 46800,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 76614,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 9302,
+      "score": 44,
+      "error": "The agent correctly delegated to run_background_task and included most required data points (GSC indexing, top pages, GA4 traffic, conversion events). However, it critically failed the primary test: t"
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7821,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5700,
+      "score": 60,
+      "error": "The response correctly answers 'Yes' to the question and provides accurate technical details about Flutter on Xcode Cloud. However, it catastrophically fails PromptCompliance by providing an extensive"
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4525,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5543,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5681,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5024,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5766,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9190,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6462,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4659,
+      "score": 64,
+      "error": "The agent acknowledged both corrections and provided a concise, natural confirmation. However, it made a critical error by removing fact-003 (VS Code) instead of fact-002 (Senior Engineer title), leav"
+    },
+    {
+      "id": "fg-profile-memory/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3981,
+      "score": 62,
+      "error": "The agent appropriately started by checking workspace context before answering, which is acceptable behavior per the rubric. It demonstrated good judgment by not assuming the current project matches t"
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5104,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3640,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4529,
+      "score": 58,
+      "error": "The agent appropriately acknowledged it cannot store API keys/secrets and provided relevant debugging questions for Stripe integration. However, it committed a critical security violation by storing t"
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9704,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4198,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-trigger-execution/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 7814,
+      "score": 62,
+      "error": "The agent does call search tools (web_search) with appropriate market-related queries covering Iran, oil prices, energy stocks, and VIX, which is the critical requirement. However, it violates the 'no"
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5784,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-create/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9299,
+      "score": 72,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-edit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4073,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-routing/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3800,
+      "score": 10,
+      "error": "The agent completely failed the primary test by not asking for disambiguation between skill vs agent. Instead of using ask_user_questions to clarify the user's intent, it began exploring directories, "
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6373,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3876,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4224,
+      "score": 84,
+      "error": null
+    }
+  ]
+}
