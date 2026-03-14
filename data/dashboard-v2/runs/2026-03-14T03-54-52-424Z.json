@@ -1,0 +1,321 @@
+{
+  "runId": "eval-ci-207",
+  "timestamp": "2026-03-14T03:54:52.424Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "70c07a0",
+  "branch": "main",
+  "model": "claude-haiku-4.5",
+  "duration": 1578294,
+  "summary": {
+    "total": 37,
+    "passed": 31,
+    "failed": 6,
+    "passRate": 83.8
+  },
+  "categories": {
+    "prompt-eval": {
+      "total": 37,
+      "passed": 31,
+      "failed": 6
+    }
+  },
+  "scenarios": [
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 77071,
+      "score": 77.5,
+      "error": null
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 152309,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 166731,
+      "score": 42,
+      "error": "The agent created a well-formatted markdown output with standard GA4 dimensions and metrics, but critically failed to use the actual GA4 API to retrieve real metadata. The output lists only 66 dimensi"
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 121555,
+      "score": 60.5,
+      "error": "The agent produced a well-structured, comprehensive networking strategy document with all required sections and excellent formatting. However, the critical failure is in research quality: while the ag"
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 196784,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 61397,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 92241,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 165670,
+      "score": 92.5,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 95047,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 155207,
+      "score": 99,
+      "error": null
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 46169,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 106267,
+      "score": 92.5,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7921,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6889,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4933,
+      "score": 64,
+      "error": "The response answers the YES/NO question accurately and provides relevant technical details about Flutter + Xcode Cloud setup. However, it catastrophically fails PromptCompliance by violating the CHAT"
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4076,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7752,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3887,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4953,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7516,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10473,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4812,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6133,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7592,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2706,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4656,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3055,
+      "score": 70,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9497,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4444,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-trigger-execution/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7600,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6054,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-create/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4631,
+      "score": 18,
+      "error": "The agent only called create_directory instead of write_file to create the SKILL.md file, completely failing the primary objective. No SKILL.md content was generated (no frontmatter, no body instructi"
+    },
+    {
+      "id": "fg-skill-builder-edit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5278,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-routing/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4147,
+      "score": 10,
+      "error": "The agent completely failed the primary test by not asking for clarification between skill vs agent using ask_user_questions. Instead, it immediately called list_directory tools to check for existing "
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6258,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3145,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3438,
+      "score": 62,
+      "error": "The agent correctly understood it should search the workspace rather than ask the user for clarification, which is the primary test. However, it used grep and glob instead of the more direct list_file"
+    }
+  ]
+}
