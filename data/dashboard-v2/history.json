@@ -12824,5 +12824,38 @@
         "error": "The agent correctly captured all competitive intelligence facts (TaskFlow, PlanPro by Acme Corp, pricing details) with high accuracy. However, it made a critical tool-routing error by using remember_u"
       }
     ]
+  },
+  {
+    "runId": "eval-ci-211",
+    "timestamp": "2026-03-15T05:49:23.118Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "7cb8a8f",
+    "branch": "main",
+    "model": "claude-haiku-4.5",
+    "duration": 137841,
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "passRate": 100
+    },
+    "categories": {
+      "prompt-eval": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "scenarios": [
+      {
+        "id": "bg-marketing-strategy/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 137841,
+        "score": 100,
+        "error": null
+      }
+    ]
   }
 ]
