@@ -1,0 +1,853 @@
+{
+  "runId": "local-1773788152369",
+  "timestamp": "2026-03-17T22:55:52.369Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "c933bfa",
+  "branch": "main",
+  "model": "openrouter/anthropic/claude-haiku-4.5",
+  "duration": 3324005,
+  "summary": {
+    "total": 101,
+    "passed": 95,
+    "failed": 6,
+    "passRate": 94.1
+  },
+  "categories": {
+    "intent-detection": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "llm": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "persistence": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "prompt-eval": {
+      "total": 80,
+      "passed": 76,
+      "failed": 4
+    },
+    "unknown": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "scenarios": [
+    {
+      "id": "basic-e2b-opencode",
+      "category": "unknown",
+      "passed": true,
+      "duration": 18770,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "benchmark-openrouter-x-ai-grok-4-fast-1769436496866",
+      "category": "unknown",
+      "passed": true,
+      "duration": null,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 61887,
+      "score": 77.5,
+      "error": null
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 123650,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 138945,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 77042,
+      "score": 50.5,
+      "error": "The agent understood the task well and produced a professionally formatted document with all required sections. However, the approach was critically flawed—multiple failed web searches were followed b"
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 182080,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 61710,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 62485,
+      "score": 89.5,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 211429,
+      "score": 84.5,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 113239,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 127538,
+      "score": 99,
+      "error": null
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 46391,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 91037,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "emoji-prompt",
+      "category": "unknown",
+      "passed": true,
+      "duration": 6720,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "fg-adaptive-complexity/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2401,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7030,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-result-summary-context/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3788,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-result-summary/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4543,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-content-iteration-regression/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6277,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-contextual-disambiguation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7193,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8865,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6535,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6542,
+      "score": 74,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5272,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 12,
+      "score": 88,
+      "error": "The output does create files (ci_post_clone.sh script with bash code block and chmod command), which violates the rubric requirement of 'Does NOT create any files.' While it does continue the step-by-"
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5540,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-hallucinated-capabilities/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6101,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4743,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4016,
+      "score": 82.5,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-no-hallucination/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5306,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8434,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-platform-self-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6778,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10947,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 13981,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6256,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5334,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 13753,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5,
+      "score": 91,
+      "error": "The output is a function call to ask_user_questions rather than providing a direct NestJS + TypeScript + MongoDB focused answer for a notification endpoint. While scanning the workspace/asking clarify"
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4053,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4136,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6180,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11693,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4512,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-research-before-failing/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7397,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-respond-first/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-date-handling/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6164,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-trigger-execution/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11013,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-trigger-execution/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10378,
+      "score": 76,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9120,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5,
+      "score": 80,
+      "error": "The output consists only of two web search function calls with no actual analysis provided. It does not contain any substantive competitive analysis, does not identify either company's strengths, is n"
+    },
+    {
+      "id": "fg-skill-builder-create/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7420,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-edit/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5197,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-routing/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6442,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-chained/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5596,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-chained/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-simple/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5967,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-simple/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10852,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3627,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3952,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 99,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-explicit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7089,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-implicit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9757,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-no-tech/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8287,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-post-brief/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7440,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-first/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12507,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-personal-routing/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 17809,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-save/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5320,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-save/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "file-operations",
+      "category": "unknown",
+      "passed": true,
+      "duration": 11250,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "intent-detection-all",
+      "category": "intent-detection",
+      "passed": false,
+      "duration": 775936,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "llm-01-market-research",
+      "category": "llm",
+      "passed": true,
+      "duration": 23189,
+      "score": 98.3,
+      "error": null
+    },
+    {
+      "id": "llm-02-marketing-strategy",
+      "category": "llm",
+      "passed": true,
+      "duration": 131994,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "llm-03-crm-integration",
+      "category": "llm",
+      "passed": true,
+      "duration": 115737,
+      "score": 85,
+      "error": null
+    },
+    {
+      "id": "llm-04-ga4-reports",
+      "category": "llm",
+      "passed": true,
+      "duration": 162016,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "llm-05-repo-analysis",
+      "category": "llm",
+      "passed": true,
+      "duration": 90004,
+      "score": 98.5,
+      "error": null
+    },
+    {
+      "id": "llm-06-repo-news-prompts",
+      "category": "llm",
+      "passed": false,
+      "duration": 44,
+      "score": null,
+      "error": "Wize Up workspace not found: 5333082f-661a-473a-88e4-548827a8a433"
+    },
+    {
+      "id": "llm-07-api-data-fetch",
+      "category": "llm",
+      "passed": true,
+      "duration": 39868,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "llm-08-skill-discovery",
+      "category": "llm",
+      "passed": true,
+      "duration": 60286,
+      "score": 97.7,
+      "error": null
+    },
+    {
+      "id": "llm-09-skill-enriched-prompt",
+      "category": "llm",
+      "passed": true,
+      "duration": 71168,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "log-streaming",
+      "category": "persistence",
+      "passed": true,
+      "duration": 16441,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "task-lifecycle",
+      "category": "persistence",
+      "passed": true,
+      "duration": 15682,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "tool-capture",
+      "category": "persistence",
+      "passed": true,
+      "duration": 31885,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-agent-writes-to-workspace",
+      "category": "unknown",
+      "passed": true,
+      "duration": 24505,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-initial-file-load",
+      "category": "unknown",
+      "passed": true,
+      "duration": 20007,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-sync-visibility",
+      "category": "unknown",
+      "passed": true,
+      "duration": 13560,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-workfolder-isolation",
+      "category": "unknown",
+      "passed": true,
+      "duration": 55836,
+      "score": null,
+      "error": null
+    }
+  ]
+}
