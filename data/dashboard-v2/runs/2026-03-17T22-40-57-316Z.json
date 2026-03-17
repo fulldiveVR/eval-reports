@@ -1,0 +1,1421 @@
+{
+  "runId": "local-1773787257316",
+  "timestamp": "2026-03-17T22:40:57.316Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "c933bfa",
+  "branch": "main",
+  "model": "openrouter/anthropic/claude-haiku-4.5",
+  "duration": 4343915,
+  "summary": {
+    "total": 172,
+    "passed": 138,
+    "failed": 34,
+    "passRate": 80.2
+  },
+  "categories": {
+    "intent-detection": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "llm": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "persistence": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "prompt-eval": {
+      "total": 151,
+      "passed": 119,
+      "failed": 32
+    },
+    "unknown": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "scenarios": [
+    {
+      "id": "basic-e2b-opencode",
+      "category": "unknown",
+      "passed": true,
+      "duration": 18770,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "benchmark-openrouter-x-ai-grok-4-fast-1769436496866",
+      "category": "unknown",
+      "passed": true,
+      "duration": null,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "bg-aso-research/bg-baseline",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 56467,
+      "score": 84.5,
+      "error": null
+    },
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 61887,
+      "score": 77.5,
+      "error": null
+    },
+    {
+      "id": "bg-aso-research/bg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 68054,
+      "score": 92.5,
+      "error": null
+    },
+    {
+      "id": "bg-aso-research/bg-v3",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 59210,
+      "score": 82.5,
+      "error": null
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 123650,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 138945,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-market-research/bg-baseline",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 62078,
+      "score": 17.5,
+      "error": "The agent created a well-structured document with professional formatting but failed the critical requirement of conducting actual research. The investor names, firm details, and event information app"
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 77042,
+      "score": 50.5,
+      "error": "The agent understood the task well and produced a professionally formatted document with all required sections. However, the approach was critically flawed—multiple failed web searches were followed b"
+    },
+    {
+      "id": "bg-market-research/bg-v2",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 63656,
+      "score": 61,
+      "error": "The agent understood the task well and created a comprehensive, professionally structured document with actionable strategies and templates. However, the response critically fails the rubric's core re"
+    },
+    {
+      "id": "bg-market-research/bg-v3",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 58681,
+      "score": 48.5,
+      "error": "The agent demonstrated excellent research methodology and created highly detailed, real investor data with verifiable firms (Monashees, Kaszek, Endeavor, SoftBank LatAm), events, and actionable outrea"
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 182080,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 61710,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-baseline",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 71418,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 62485,
+      "score": 89.5,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 53408,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-v3",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 67733,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-baseline",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 74662,
+      "score": 78.5,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 211429,
+      "score": 84.5,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-v2",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 76245,
+      "score": 66,
+      "error": "The agent demonstrated excellent task understanding and structured a comprehensive approach with detailed research planning. However, the output is severely truncated mid-sentence in the hurricane pre"
+    },
+    {
+      "id": "bg-renters-guide/bg-v3",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 70136,
+      "score": 52,
+      "error": "The agent demonstrated strong understanding of the comprehensive renter's guide requirements and began creating detailed, location-specific content with accurate Florida legal information and practica"
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 113239,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis/bg-baseline",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 33354,
+      "score": 48.5,
+      "error": "The agent demonstrated strong understanding of the task by successfully cloning both repositories and conducting deep exploration of source code files, examining multiple TypeScript and Rust files to "
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 127538,
+      "score": 99,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis/bg-v2",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 37778,
+      "score": 50.5,
+      "error": "The agent correctly understood the task and cloned both repositories, exploring source code files extensively. However, the analysis was severely incomplete - the output file was truncated mid-sentenc"
+    },
+    {
+      "id": "bg-repo-analysis/bg-v3",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 39681,
+      "score": 73,
+      "error": null
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 46391,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 91037,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "emoji-prompt",
+      "category": "unknown",
+      "passed": true,
+      "duration": 6720,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "fg-adaptive-complexity/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2401,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1890,
+      "score": 46,
+      "error": "The agent correctly delegated to run_background_task and included most required metrics (indexing status, top pages, traffic, conversion events) with proper output format specification. However, the t"
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-mercury-required-tools",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1773,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1530,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7030,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-result-summary-context/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3788,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-result-summary/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4543,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-content-iteration-regression/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6277,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-contextual-disambiguation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7193,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-baseline",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4232,
+      "score": 32.5,
+      "error": "The agent completely failed to deliver the requested LinkedIn article, instead asking clarifying questions. While the questions show good understanding of the task requirements, the user already provi"
+    },
+    {
+      "id": "fg-creative-content/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2279,
+      "score": 74,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1897,
+      "score": 32,
+      "error": "The response completely fails Voice Matching (reads like corporate marketing/bullet points, not the user's technical, casual, direct style with phrases like 'this shit'). It lacks Content Substance sp"
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8865,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6535,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3630,
+      "score": 80,
+      "error": "The output is a function call requesting user input about article length preferences, not an actual LinkedIn article. It contains no content about AI code quality, NestJS vs Express, testing practices"
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 818,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1275,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6542,
+      "score": 74,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1856,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1682,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5272,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 12,
+      "score": 88,
+      "error": "The output does create files (ci_post_clone.sh script with bash code block and chmod command), which violates the rubric requirement of 'Does NOT create any files.' While it does continue the step-by-"
+    },
+    {
+      "id": "fg-file-discipline-research/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 975,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 888,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5540,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-hallucinated-capabilities/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6101,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-baseline",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4376,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 706,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 818,
+      "score": 74,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4743,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4016,
+      "score": 82.5,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-no-hallucination/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5306,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1133,
+      "score": 62,
+      "error": "The agent correctly delegated to run_background_task and created a mostly actionable prompt covering web search, HTML report creation, and file saving. However, the task prompt critically omits the 'f"
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1458,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8434,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 2230,
+      "score": 67,
+      "error": "The output is a function call to web_search, not a background task prompt. It lacks all required elements: (1) no mention of 'frontend-design' skill, (2) while it mentions AI agents, it's only in a se"
+    },
+    {
+      "id": "fg-platform-self-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6778,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-baseline",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10824,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2985,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1472,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10947,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 13981,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 11878,
+      "score": 80,
+      "error": "The output is a function call to remember a user fact, not a response providing cost optimization strategies. It contains no analysis of infrastructure, LLM, product design, or business optimization s"
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2145,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-mercury-required-tools",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1315,
+      "score": 0,
+      "error": "No agent response was provided to evaluate. The 'Agent Response' section is empty, making it impossible to assess whether the agent acknowledged the user's explicit 'keep in mind' request, called reme"
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 999,
+      "score": 60,
+      "error": "The response provides highly relevant and actionable AWS-to-GCP migration guidance with accurate cost-saving recommendations. However, it completely fails to acknowledge the user's explicit 'keep in m"
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6256,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1877,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-mercury-required-tools",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1359,
+      "score": 0,
+      "error": "The agent provided no response whatsoever. There were no tool calls to remove the outdated facts (fact-001 and fact-002) or add the corrected facts (Rust for backend, Staff Engineer). Without any resp"
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1196,
+      "score": 24,
+      "error": "The agent only made 1 of 4 required tool calls (removing fact-001) and provided no response text to acknowledge the user's request or confirm the update. It failed to remove fact-002, add the correcte"
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5334,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1513,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 991,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 13753,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5,
+      "score": 91,
+      "error": "The output is a function call to ask_user_questions rather than providing a direct NestJS + TypeScript + MongoDB focused answer for a notification endpoint. While scanning the workspace/asking clarify"
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 575,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 769,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4053,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 869,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 907,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4136,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1889,
+      "score": 14,
+      "error": "The agent committed a critical security violation by saving the Stripe account ID (acct_1234) as a fact, directly contradicting the explicit instruction to NEVER store sensitive data including account"
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 813,
+      "score": 64,
+      "error": "The agent correctly refused to save any sensitive data (API keys, secrets, account IDs), passing the critical security test with full PromptCompliance score. However, the response is incomplete for de"
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6180,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3276,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2775,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11693,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3505,
+      "score": 92,
+      "error": "The output shows function calls to save user facts (tech lead role, team size, backend stack details) via remember_user_fact and updates workspace memory with migration context. However, it does NOT p"
+    },
+    {
+      "id": "fg-profile-save-explicit/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4079,
+      "score": 92,
+      "error": "The output shows the agent calling remember_user_fact twice to save relevant facts: (1) the user's identity as 'VP of Engineering' and (2) the goal of 'Migrating all infrastructure from AWS to GCP by "
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1593,
+      "score": 72,
+      "error": null
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-mercury-required-tools",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1374,
+      "score": 42,
+      "error": "The agent correctly called remember_user_fact for the ClickHouse fact with appropriate category, but completely missed the second fact about the user's name being Alex. The response failed to acknowle"
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 476,
+      "score": 0,
+      "error": "No agent response was provided to evaluate. The 'Agent Response' section is empty, so there is no content to assess against the rubric for remembering facts about ClickHouse and the user's name (Alex)"
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4512,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-tool-usage/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 9099,
+      "score": 92,
+      "error": "The output shows two function calls to remember_user_fact: one adding 'Name is Alex' to the identity category, and another adding 'Uses ClickHouse as data warehouse for analytics pipeline' to the back"
+    },
+    {
+      "id": "fg-research-before-failing/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7397,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-respond-first/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-date-handling/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6164,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-trigger-execution/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11013,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-trigger-execution/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-baseline",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6650,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1139,
+      "score": 76,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1034,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10378,
+      "score": 76,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9120,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5,
+      "score": 80,
+      "error": "The output consists only of two web search function calls with no actual analysis provided. It does not contain any substantive competitive analysis, does not identify either company's strengths, is n"
+    },
+    {
+      "id": "fg-skill-builder-create/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7420,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-edit/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5197,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-routing/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6442,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-chained/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5596,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-chained/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-simple/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5967,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-simple/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 887,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-mercury-required-tools",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2079,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1267,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10852,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3320,
+      "score": 67,
+      "error": "The output shows two web_search function calls but does not delegate to run_background_task with a prompt referencing 'frontend-design' skill. While the rubric allows web searches as enrichment, the c"
+    },
+    {
+      "id": "fg-skill-explanation/fg-baseline",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3272,
+      "score": 92.5,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-mercury-minimal",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 694,
+      "score": 70,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-mercury-v1",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 1005,
+      "score": 66,
+      "error": "The agent correctly understood the typo-laden question and provided a relevant explanation of what the Real Estate skill does, including specific capabilities like market analysis and comparative list"
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3627,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3952,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 99,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-explicit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7089,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-implicit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9757,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-no-tech/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8287,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-post-brief/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7440,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-first/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12507,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-personal-routing/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 17809,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-personal-routing/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3,
+      "score": 92,
+      "error": "The output shows the agent correctly using remember_user_fact (not update_workspace_memory) to save the personal fact about 10 years backend experience with Go and Python. However, the output is incom"
+    },
+    {
+      "id": "fg-workspace-memory-save/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5320,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-save/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "file-operations",
+      "category": "unknown",
+      "passed": true,
+      "duration": 11250,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "intent-detection-all",
+      "category": "intent-detection",
+      "passed": false,
+      "duration": 775936,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "llm-01-market-research",
+      "category": "llm",
+      "passed": true,
+      "duration": 23189,
+      "score": 98.3,
+      "error": null
+    },
+    {
+      "id": "llm-02-marketing-strategy",
+      "category": "llm",
+      "passed": true,
+      "duration": 131994,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "llm-03-crm-integration",
+      "category": "llm",
+      "passed": true,
+      "duration": 115737,
+      "score": 85,
+      "error": null
+    },
+    {
+      "id": "llm-04-ga4-reports",
+      "category": "llm",
+      "passed": true,
+      "duration": 162016,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "llm-05-repo-analysis",
+      "category": "llm",
+      "passed": true,
+      "duration": 90004,
+      "score": 98.5,
+      "error": null
+    },
+    {
+      "id": "llm-06-repo-news-prompts",
+      "category": "llm",
+      "passed": false,
+      "duration": 44,
+      "score": null,
+      "error": "Wize Up workspace not found: 5333082f-661a-473a-88e4-548827a8a433"
+    },
+    {
+      "id": "llm-07-api-data-fetch",
+      "category": "llm",
+      "passed": true,
+      "duration": 39868,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "llm-08-skill-discovery",
+      "category": "llm",
+      "passed": true,
+      "duration": 60286,
+      "score": 97.7,
+      "error": null
+    },
+    {
+      "id": "llm-09-skill-enriched-prompt",
+      "category": "llm",
+      "passed": true,
+      "duration": 71168,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "log-streaming",
+      "category": "persistence",
+      "passed": true,
+      "duration": 16441,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "task-lifecycle",
+      "category": "persistence",
+      "passed": true,
+      "duration": 15682,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "tool-capture",
+      "category": "persistence",
+      "passed": true,
+      "duration": 31885,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-agent-writes-to-workspace",
+      "category": "unknown",
+      "passed": true,
+      "duration": 24505,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-initial-file-load",
+      "category": "unknown",
+      "passed": true,
+      "duration": 20007,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-sync-visibility",
+      "category": "unknown",
+      "passed": true,
+      "duration": 13560,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-workfolder-isolation",
+      "category": "unknown",
+      "passed": true,
+      "duration": 55836,
+      "score": null,
+      "error": null
+    }
+  ]
+}
