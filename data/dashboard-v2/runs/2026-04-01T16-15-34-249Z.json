@@ -1,0 +1,1037 @@
+{
+  "runId": "local-1775060134249",
+  "timestamp": "2026-04-01T16:15:34.249Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "260fb35",
+  "branch": "main",
+  "model": "openrouter/anthropic/claude-haiku-4.5",
+  "duration": 5707047,
+  "summary": {
+    "total": 124,
+    "passed": 106,
+    "failed": 18,
+    "passRate": 85.5
+  },
+  "categories": {
+    "intent-detection": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "llm": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "persistence": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "prompt-eval": {
+      "total": 103,
+      "passed": 87,
+      "failed": 16
+    },
+    "unknown": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "scenarios": [
+    {
+      "id": "basic-e2b-opencode",
+      "category": "unknown",
+      "passed": true,
+      "duration": 18770,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "benchmark-openrouter-x-ai-grok-4-fast-1769436496866",
+      "category": "unknown",
+      "passed": true,
+      "duration": null,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 174892,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 349466,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 229012,
+      "score": 99,
+      "error": null
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 165729,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 376521,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 300610,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 81679,
+      "score": 82.5,
+      "error": null
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 280503,
+      "score": 87.5,
+      "error": null
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 700566,
+      "score": 16.5,
+      "error": "The agent completely failed to analyze the correct repository. It was asked to analyze DiveSMS (an Android SMS app) but instead appears to have analyzed metadata/translation infrastructure files (_scr"
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 272297,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 60204,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 300268,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "bg-workspace-reuse/bg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 60268,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "emoji-prompt",
+      "category": "unknown",
+      "passed": true,
+      "duration": 6720,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "fg-adaptive-complexity/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2820,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 19526,
+      "score": 12,
+      "error": "The agent correctly recognized the need to delegate to a background task and described what should be done, but critically NEVER CALLED run_background_task - it only called exploratory file system too"
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-no-prediction/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 7878,
+      "score": 24,
+      "error": "The agent completely failed to delegate the task to run_background_task, which is an automatic fail per the rubric. Instead, it made 10+ individual search calls and asked the user a confirmation quest"
+    },
+    {
+      "id": "fg-bg-task-result-summary-context/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2266,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-result-summary/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2280,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-content-iteration-regression/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5319,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-contextual-disambiguation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7019,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7641,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6535,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-date-awareness-direct/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 1235,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-date-awareness-time-calc/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4588,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-ambiguous-create/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2749,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-brainstorm/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8242,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5226,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-followup/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7268,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 12,
+      "score": 88,
+      "error": "The output does create files (ci_post_clone.sh script with bash code block and chmod command), which violates the rubric requirement of 'Does NOT create any files.' While it does continue the step-by-"
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 13558,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-structurize/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3589,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-hallucinated-capabilities/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 21697,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4855,
+      "score": 64,
+      "error": "The response correctly detects Russian and responds fluently in that language, handling code-switching naturally. However, it inaccurately states there are NO predefined background tasks, when the sys"
+    },
+    {
+      "id": "fg-multilingual/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4016,
+      "score": 82.5,
+      "error": null
+    },
+    {
+      "id": "fg-multilingual/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-no-hallucination/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 22245,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 20724,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-platform-self-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4064,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12701,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 13981,
+      "score": 97.5,
+      "error": null
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12738,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6982,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 14334,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-profile-memory/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5,
+      "score": 91,
+      "error": "The output is a function call to ask_user_questions rather than providing a direct NestJS + TypeScript + MongoDB focused answer for a notification endpoint. While scanning the workspace/asking clarify"
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3125,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4308,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 14728,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 17476,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7946,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-research-before-failing/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3229,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-research-delegation-quality/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 10406,
+      "score": 30,
+      "error": "The agent failed to delegate this research task to run_background_task, instead attempting to handle it inline with multiple web searches that yielded insufficient results. While it correctly avoided "
+    },
+    {
+      "id": "fg-respond-first/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-date-handling/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7375,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-instruction-quality/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 11951,
+      "score": 18,
+      "error": "The agent failed to call schedule_task, which is an automatic fail condition for this scenario. Instead, it performed numerous file operations and a web search while only claiming to have created a sc"
+    },
+    {
+      "id": "fg-schedule-trigger-execution/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12610,
+      "score": 80,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-trigger-execution/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8734,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9120,
+      "score": 90,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 5,
+      "score": 80,
+      "error": "The output consists only of two web search function calls with no actual analysis provided. It does not contain any substantive competitive analysis, does not identify either company's strengths, is n"
+    },
+    {
+      "id": "fg-skill-builder-create/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7420,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-edit/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5197,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-skill-builder-routing/fg-skill-builder",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6442,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-chained/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 15381,
+      "score": 28,
+      "error": "The agent acknowledges the task and claims to be running the content-strategy skill via background task, but critically fails to actually call run_background_task. Instead, it only calls list_director"
+    },
+    {
+      "id": "fg-skill-delegation-chained/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-simple/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 20676,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-simple/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 18247,
+      "score": 26,
+      "error": "The agent correctly identified the need to search for information and communicate findings, but critically FAILED to actually delegate to run_background_task despite saying 'Calling the skill now.' It"
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 12087,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-v2",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3952,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5,
+      "score": 99,
+      "error": null
+    },
+    {
+      "id": "fg-stitch-anchor-prompt/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 13012,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-stitch-screen-prompts-zero-styling/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 46157,
+      "score": 54,
+      "error": "The agent provided 5 well-structured screen prompts with good content descriptions and proper bookends. However, it critically failed the primary test by including a Master Anchor Screen in the file w"
+    },
+    {
+      "id": "fg-todo-bg-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3086,
+      "score": 46,
+      "error": "The agent called manage_todos to track the 4 steps, which is positive, but critically failed to delegate to run_background_task with the market-intelligence skill as required. Instead, it asked clarif"
+    },
+    {
+      "id": "fg-todo-multi-step/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5955,
+      "score": 86,
+      "error": null
+    },
+    {
+      "id": "fg-todo-simple-skip/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3944,
+      "score": 88,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-explicit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 19885,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-implicit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11870,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-no-tech/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 17672,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-post-brief/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 15412,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-continuity-first-time/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 4806,
+      "score": 16,
+      "error": "The agent completely failed the primary objective by not delegating to run_background_task for the scraping task, instead claiming it cannot scrape and offering manual workarounds. It called incorrect"
+    },
+    {
+      "id": "fg-workspace-continuity-repeat/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 2556,
+      "score": 14,
+      "error": "The agent completely failed the primary test by not delegating to run_background_task despite the task requiring Gmail API execution. Instead, it only called list_directory and read_file, then asked a"
+    },
+    {
+      "id": "fg-workspace-continuity-similar/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 8658,
+      "score": 40,
+      "error": "The agent correctly identified existing video generation tools and inspected them, showing good workspace awareness. However, it completely failed the primary requirement: it never called run_backgrou"
+    },
+    {
+      "id": "fg-workspace-first/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 24057,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-personal-routing/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 17711,
+      "score": 76,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-save/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10840,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-save/pf-guardrails",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "file-operations",
+      "category": "unknown",
+      "passed": true,
+      "duration": 11250,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "gw-ambiguous-no-refusal/gw-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2876,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "gw-coding-question/gw-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2728,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "gw-google-search/gw-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2853,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "gw-multi-topic/gw-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3124,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "gw-seo-audit/gw-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2497,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "gw-weather-query/gw-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3818,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "intent-detection-all",
+      "category": "intent-detection",
+      "passed": false,
+      "duration": 775936,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "llm-01-market-research",
+      "category": "llm",
+      "passed": true,
+      "duration": 23189,
+      "score": 98.3,
+      "error": null
+    },
+    {
+      "id": "llm-02-marketing-strategy",
+      "category": "llm",
+      "passed": true,
+      "duration": 131994,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "llm-03-crm-integration",
+      "category": "llm",
+      "passed": true,
+      "duration": 115737,
+      "score": 85,
+      "error": null
+    },
+    {
+      "id": "llm-04-ga4-reports",
+      "category": "llm",
+      "passed": true,
+      "duration": 162016,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "llm-05-repo-analysis",
+      "category": "llm",
+      "passed": true,
+      "duration": 90004,
+      "score": 98.5,
+      "error": null
+    },
+    {
+      "id": "llm-06-repo-news-prompts",
+      "category": "llm",
+      "passed": false,
+      "duration": 44,
+      "score": null,
+      "error": "Wize Up workspace not found: 5333082f-661a-473a-88e4-548827a8a433"
+    },
+    {
+      "id": "llm-07-api-data-fetch",
+      "category": "llm",
+      "passed": true,
+      "duration": 39868,
+      "score": 95,
+      "error": null
+    },
+    {
+      "id": "llm-08-skill-discovery",
+      "category": "llm",
+      "passed": true,
+      "duration": 60286,
+      "score": 97.7,
+      "error": null
+    },
+    {
+      "id": "llm-09-skill-enriched-prompt",
+      "category": "llm",
+      "passed": true,
+      "duration": 71168,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "log-streaming",
+      "category": "persistence",
+      "passed": true,
+      "duration": 16441,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "task-lifecycle",
+      "category": "persistence",
+      "passed": true,
+      "duration": 15682,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "tool-capture",
+      "category": "persistence",
+      "passed": true,
+      "duration": 31885,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-agent-writes-to-workspace",
+      "category": "unknown",
+      "passed": true,
+      "duration": 24505,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-initial-file-load",
+      "category": "unknown",
+      "passed": true,
+      "duration": 20007,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-sync-visibility",
+      "category": "unknown",
+      "passed": true,
+      "duration": 13560,
+      "score": null,
+      "error": null
+    },
+    {
+      "id": "vfs-workfolder-isolation",
+      "category": "unknown",
+      "passed": true,
+      "duration": 55836,
+      "score": null,
+      "error": null
+    }
+  ]
+}
