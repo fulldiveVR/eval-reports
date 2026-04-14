@@ -35980,5 +35980,590 @@
         "error": null
       }
     ]
+  },
+  {
+    "runId": "eval-ci-309",
+    "timestamp": "2026-04-14T04:13:06.864Z",
+    "project": "dashboard-v2",
+    "source": "eval-ci",
+    "commit": "28f703a",
+    "branch": "main",
+    "model": "claude-haiku-4.5",
+    "duration": 1758666,
+    "summary": {
+      "total": 70,
+      "passed": 68,
+      "failed": 2,
+      "passRate": 97.1
+    },
+    "categories": {
+      "prompt-eval": {
+        "total": 70,
+        "passed": 68,
+        "failed": 2
+      }
+    },
+    "scenarios": [
+      {
+        "id": "bg-aso-research/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 61929,
+        "score": 75.5,
+        "error": null
+      },
+      {
+        "id": "bg-crm-integration/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 106329,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-ga4-reports/bg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 166378,
+        "score": 44,
+        "error": "The agent understood the task and created the required markdown file with appropriate structure and formatting. However, the agent failed to actually connect to the GA4 API despite credentials suppose"
+      },
+      {
+        "id": "bg-market-research/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 91162,
+        "score": 93,
+        "error": null
+      },
+      {
+        "id": "bg-marketing-strategy/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 106486,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-onboarding-research-report/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 61207,
+        "score": 77.5,
+        "error": null
+      },
+      {
+        "id": "bg-play-store-listing/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 62158,
+        "score": 82.5,
+        "error": null
+      },
+      {
+        "id": "bg-renters-guide/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 166088,
+        "score": 82.5,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis-llm/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 109737,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "bg-repo-analysis/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 136704,
+        "score": 87.5,
+        "error": null
+      },
+      {
+        "id": "bg-skill-enriched-prompt/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76013,
+        "score": 97.5,
+        "error": null
+      },
+      {
+        "id": "bg-workspace-file-discipline/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 76388,
+        "score": 97.5,
+        "error": null
+      },
+      {
+        "id": "bg-workspace-reuse/bg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 16502,
+        "score": 88,
+        "error": null
+      },
+      {
+        "id": "fg-adaptive-complexity/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3170,
+        "score": 80,
+        "error": null
+      },
+      {
+        "id": "fg-bg-task-context-enrichment/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6024,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-bg-task-no-prediction/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 7225,
+        "score": 90,
+        "error": null
+      },
+      {
+        "id": "fg-bg-task-result-summary-context/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3908,
+        "score": 84,
+        "error": null
+      },
+      {
+        "id": "fg-bg-task-result-summary/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 2579,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-content-iteration-regression/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 16486,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-contextual-disambiguation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3937,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-creative-content/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 18992,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-date-awareness-direct/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 1905,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-date-awareness-time-calc/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 1728,
+        "score": 94,
+        "error": null
+      },
+      {
+        "id": "fg-file-creation-recreate/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 20234,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-ambiguous-create/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 7393,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-brainstorm/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 16299,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-followup/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4925,
+        "score": 94,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-instructions/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3961,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-research/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4544,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-file-discipline-structurize/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 9476,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-hallucinated-capabilities/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4394,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-improvement-diagnostic-relay/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3325,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-improvement-no-auto-trigger/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3118,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-improvement-trigger/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 19345,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-multilingual/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3671,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-oauth-credential-awareness/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 16361,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-onboarding-task-creation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6051,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-platform-self-awareness/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6446,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-pricing-analysis/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 14028,
+        "score": 94,
+        "error": null
+      },
+      {
+        "id": "fg-profile-explicit-keep-in-mind/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4467,
+        "score": 84,
+        "error": null
+      },
+      {
+        "id": "fg-profile-fact-correction/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 9106,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-memory/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5406,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-chitchat/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3239,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-ephemeral/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3773,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-profile-no-save-sensitive/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4036,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-profile-organic-discovery/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 25323,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-profile-tool-usage/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3665,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-research-before-failing/fg-production",
+        "category": "prompt-eval",
+        "passed": false,
+        "duration": 9426,
+        "score": 68,
+        "error": "The agent appropriately delegates to a background task and acknowledges the 401 errors, noting that Mixpanel requires specific auth formats (Basic auth with API Secret as username and empty password, "
+      },
+      {
+        "id": "fg-research-delegation-quality/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 7066,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-schedule-date-handling/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6075,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-schedule-instruction-quality/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 27726,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-schedule-trigger-execution/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 20008,
+        "score": 96,
+        "error": null
+      },
+      {
+        "id": "fg-search-query/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6410,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-skill-delegation-chained/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4254,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-skill-delegation-simple/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5581,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-skill-delegation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 10770,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-skill-explanation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 3570,
+        "score": 88,
+        "error": null
+      },
+      {
+        "id": "fg-todo-bg-delegation/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 8569,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-todo-multi-step/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 11082,
+        "score": 76,
+        "error": null
+      },
+      {
+        "id": "fg-todo-simple-skip/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 7802,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-web-app-designer-explicit/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 6393,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-web-app-designer-implicit/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 7760,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-web-app-designer-no-tech/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 10092,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-web-app-designer-post-brief/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 8744,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-workspace-continuity-first-time/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4667,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-workspace-continuity-repeat/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 4145,
+        "score": 100,
+        "error": null
+      },
+      {
+        "id": "fg-workspace-continuity-similar/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 27088,
+        "score": 98,
+        "error": null
+      },
+      {
+        "id": "fg-workspace-lookup/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 26468,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-workspace-memory-personal-routing/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 23638,
+        "score": 92,
+        "error": null
+      },
+      {
+        "id": "fg-workspace-memory-save/fg-production",
+        "category": "prompt-eval",
+        "passed": true,
+        "duration": 5711,
+        "score": 82,
+        "error": null
+      }
+    ]
   }
 ]
