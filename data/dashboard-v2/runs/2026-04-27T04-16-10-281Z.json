@@ -1,0 +1,649 @@
+{
+  "runId": "eval-ci-352",
+  "timestamp": "2026-04-27T04:16:10.281Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "b9992d0",
+  "branch": "main",
+  "model": "claude-haiku-4.5",
+  "duration": 252815,
+  "summary": {
+    "total": 78,
+    "passed": 45,
+    "failed": 33,
+    "passRate": 57.7
+  },
+  "categories": {
+    "prompt-eval": {
+      "total": 78,
+      "passed": 45,
+      "failed": 33
+    }
+  },
+  "scenarios": [
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "bg-workspace-reuse/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "fg-adaptive-complexity/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 2076,
+      "score": 68,
+      "error": "The agent successfully addresses the bakery website topic and provides Wix.com as the starting point, which is appropriate for beginners. However, it violates the one-step requirement by including mul"
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6933,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-no-prediction/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6834,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-result-summary-context/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2859,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-bg-task-result-summary/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2861,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-content-iteration-regression/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4428,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-contextual-disambiguation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2882,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5950,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-date-awareness-direct/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2966,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-date-awareness-time-calc/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2413,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-file-creation-recreate/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 403"
+    },
+    {
+      "id": "fg-file-discipline-ambiguous-create/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-file-discipline-brainstorm/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4362,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4125,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5004,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-file-discipline-structurize/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-hallucinated-capabilities/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3807,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-improvement-diagnostic-relay/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-improvement-no-auto-trigger/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-improvement-trigger/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3764,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-oauth-credential-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4304,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 11934,
+      "score": 82,
+      "error": null
+    },
+    {
+      "id": "fg-platform-self-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4399,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 10592,
+      "score": 96,
+      "error": null
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4660,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": 3550,
+      "score": 62,
+      "error": "The agent correctly acknowledged both corrections and provided a natural, congratulatory response. However, it made a critical error by removing fact-003 (VS Code) instead of fact-002 (Senior Engineer"
+    },
+    {
+      "id": "fg-profile-memory/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5589,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3815,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3372,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2369,
+      "score": 94,
+      "error": null
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8014,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3616,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-research-before-failing/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5305,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-research-delegation-quality/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 7485,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-date-handling/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3026,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-instruction-quality/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 14645,
+      "score": 78,
+      "error": null
+    },
+    {
+      "id": "fg-schedule-trigger-execution/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 8112,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4763,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-search-skills-before-bg-negative/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-search-skills-before-bg-positive/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-skill-creation-refusal/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-skill-delegation-chained/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5104,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation-simple/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3008,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 9935,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 2531,
+      "score": 84,
+      "error": null
+    },
+    {
+      "id": "fg-skill-marketplace-installed/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-skill-marketplace-not-found/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-skill-marketplace-search/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-skill-marketplace-simple-task/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-skill-marketplace-trigger/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-todo-bg-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-todo-multi-step/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-todo-simple-skip/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 402"
+    },
+    {
+      "id": "fg-web-app-designer-explicit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 4972,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-implicit/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6913,
+      "score": 98,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-no-tech/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5918,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-web-app-designer-post-brief/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 5676,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-continuity-first-time/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3645,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-continuity-repeat/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3523,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-continuity-similar/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6543,
+      "score": 100,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-lookup/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 6124,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-personal-routing/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 14975,
+      "score": 92,
+      "error": null
+    },
+    {
+      "id": "fg-workspace-memory-save/fg-production",
+      "category": "prompt-eval",
+      "passed": true,
+      "duration": 3134,
+      "score": 98,
+      "error": null
+    }
+  ]
+}
