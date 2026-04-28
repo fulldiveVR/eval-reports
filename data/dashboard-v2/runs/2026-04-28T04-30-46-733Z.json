@@ -1,0 +1,649 @@
+{
+  "runId": "eval-ci-353",
+  "timestamp": "2026-04-28T04:30:46.733Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "b9992d0",
+  "branch": "main",
+  "model": "claude-haiku-4.5",
+  "duration": 0,
+  "summary": {
+    "total": 78,
+    "passed": 0,
+    "failed": 78,
+    "passRate": 0
+  },
+  "categories": {
+    "prompt-eval": {
+      "total": 78,
+      "passed": 0,
+      "failed": 78
+    }
+  },
+  "scenarios": [
+    {
+      "id": "bg-aso-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-crm-integration/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-ga4-reports/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-market-research/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-onboarding-research-report/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-play-store-listing/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-renters-guide/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-repo-analysis-llm/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-repo-analysis/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-skill-enriched-prompt/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-workspace-file-discipline/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "bg-workspace-reuse/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-adaptive-complexity/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-bg-task-context-enrichment/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-bg-task-no-prediction/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-bg-task-result-summary-context/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-bg-task-result-summary/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-content-iteration-regression/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-contextual-disambiguation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-creative-content/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-date-awareness-direct/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-date-awareness-time-calc/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-file-creation-recreate/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-file-discipline-ambiguous-create/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-file-discipline-brainstorm/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-file-discipline-followup/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-file-discipline-instructions/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-file-discipline-research/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-file-discipline-structurize/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-hallucinated-capabilities/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-improvement-diagnostic-relay/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-improvement-no-auto-trigger/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-improvement-trigger/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-multilingual/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-oauth-credential-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-onboarding-task-creation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-platform-self-awareness/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-pricing-analysis/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-profile-explicit-keep-in-mind/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-profile-fact-correction/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-profile-memory/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-profile-no-save-chitchat/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-profile-no-save-ephemeral/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-profile-no-save-sensitive/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-profile-organic-discovery/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-profile-tool-usage/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-research-before-failing/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-research-delegation-quality/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-schedule-date-handling/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-schedule-instruction-quality/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-schedule-trigger-execution/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-search-query/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-search-skills-before-bg-negative/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-search-skills-before-bg-positive/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-creation-refusal/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-delegation-chained/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-delegation-simple/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-explanation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-marketplace-installed/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-marketplace-not-found/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-marketplace-search/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-marketplace-simple-task/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-skill-marketplace-trigger/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-todo-bg-delegation/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-todo-multi-step/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-todo-simple-skip/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-web-app-designer-explicit/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-web-app-designer-implicit/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-web-app-designer-no-tech/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-web-app-designer-post-brief/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-workspace-continuity-first-time/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-workspace-continuity-repeat/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-workspace-continuity-similar/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-workspace-lookup/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-workspace-memory-personal-routing/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    },
+    {
+      "id": "fg-workspace-memory-save/fg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    }
+  ]
+}
