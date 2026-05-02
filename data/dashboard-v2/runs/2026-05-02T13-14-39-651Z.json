@@ -1,0 +1,33 @@
+{
+  "runId": "eval-ci-359",
+  "timestamp": "2026-05-02T13:14:39.651Z",
+  "project": "dashboard-v2",
+  "source": "eval-ci",
+  "commit": "18f8bb9",
+  "branch": "main",
+  "model": "claude-haiku-4.5",
+  "duration": 0,
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "passRate": 0
+  },
+  "categories": {
+    "prompt-eval": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    }
+  },
+  "scenarios": [
+    {
+      "id": "bg-marketing-strategy/bg-production",
+      "category": "prompt-eval",
+      "passed": false,
+      "duration": null,
+      "score": 0,
+      "error": "LLM call failed: Request failed with status code 401"
+    }
+  ]
+}
